@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" fill="none"><style>:root{color-scheme:light dark}</style>
+  <!-- Olive branch ornament -->
+  <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none">
+    <path d="M5 30 Q40 18 70 30 T115 30" />
+  </g>
+  <g fill="currentColor" opacity="0.85">
+    <!-- leaves left side -->
+    <ellipse cx="18" cy="24" rx="6" ry="2.4" transform="rotate(-25 18 24)"/>
+    <ellipse cx="30" cy="20" rx="6" ry="2.4" transform="rotate(-18 30 20)"/>
+    <ellipse cx="44" cy="18" rx="6.5" ry="2.5" transform="rotate(-10 44 18)"/>
+    <ellipse cx="22" cy="38" rx="6" ry="2.4" transform="rotate(20 22 38)"/>
+    <ellipse cx="36" cy="40" rx="6" ry="2.4" transform="rotate(14 36 40)"/>
+    <!-- leaves right side -->
+    <ellipse cx="58" cy="20" rx="6.5" ry="2.5" transform="rotate(12 58 20)"/>
+    <ellipse cx="74" cy="22" rx="6.5" ry="2.5" transform="rotate(20 74 22)"/>
+    <ellipse cx="90" cy="26" rx="6" ry="2.4" transform="rotate(28 90 26)"/>
+    <ellipse cx="66" cy="40" rx="6" ry="2.4" transform="rotate(-18 66 40)"/>
+    <ellipse cx="82" cy="40" rx="6" ry="2.4" transform="rotate(-22 82 40)"/>
+    <ellipse cx="100" cy="36" rx="6" ry="2.4" transform="rotate(-26 100 36)"/>
+  </g>
+  <!-- olives -->
+  <g fill="currentColor">
+    <circle cx="50" cy="32" r="2.4"/>
+    <circle cx="78" cy="34" r="2.4"/>
+    <circle cx="96" cy="32" r="2.2"/>
+  </g>
+</svg>

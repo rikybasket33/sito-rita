@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (function(){
+      function apply(){
+        try{
+          if(localStorage.getItem("rr_theme")==="dark"){
+            document.documentElement.setAttribute("data-theme","dark");
+          }else{
+            document.documentElement.removeAttribute("data-theme");
+          }
+        }catch(e){}
+      }
+      apply();
+      window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+    })();
+  </script>
+  <title>Cookies — Rita Roncassaglia</title>
+  <meta name="description" content="This site sets no cookies. Here is the short list of what your browser stores locally, and how to clear it." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cookies — Rita Roncassaglia" />
+  <meta property="og:description" content="This site sets no cookies. Here is the short list of what your browser stores locally, and how to clear it." />
+  <meta property="og:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cookies — Rita Roncassaglia" />
+  <meta name="twitter:description" content="This site sets no cookies. Here is the short list of what your browser stores locally, and how to clear it." />
+  <meta name="twitter:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <style>
+    .legal h2 {
+      font-size: 1.45rem;
+      margin: 2.6rem 0 0.7rem;
+    }
+    .legal h2:first-of-type { margin-top: 0; }
+    .legal p, .legal li { color: var(--c-ink-soft); }
+    .legal ul { margin: 0.6rem 0 0 1.1rem; }
+    .legal li { margin-bottom: 0.45rem; }
+    .legal .updated {
+      margin-top: 3rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--c-line);
+      font-size: 0.9rem;
+      color: var(--c-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">R</span>
+        <span>
+          <span class="brand__name" data-biz="name">Rita Roncassaglia</span>
+          <span class="brand__tagline" data-biz="tagline">Italian Ancestry & Heritage Journeys</span>
+        </span>
+      </a>
+      <nav class="nav__group">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The Experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="quote.html"><span>Request a quote</span> <span class="arrow">→</span></a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <section class="section section--tight section--cream-deep">
+      <div class="container container--narrow" style="text-align:center;">
+        <span class="eyebrow eyebrow--center reveal">Cookies</span>
+        <h1 class="reveal">There is no cookie banner, because there are no cookies.</h1>
+        <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">Two small preferences live in your browser and never leave it. This page says exactly which, and how to get rid of them.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow legal">
+        <h2>This site sets no cookies</h2>
+        <p>
+          Not one. There is no analytics, no advertising network, no social media button, no embedded
+          video or map, and no consent banner &mdash; because there is nothing to consent to.
+          The typefaces are served from this site rather than from Google, so no request leaves your
+          browser simply because you opened a page.
+        </p>
+
+        <h2>What is stored on your device</h2>
+        <p>
+          Two small things live in your browser's <em>local storage</em>. They never leave your device,
+          they are not sent to us, and they are not readable by anyone else.
+        </p>
+        <ul>
+          <li><strong><code>rr_theme</code></strong> &mdash; whether you chose the light or the dark version
+              of the site, so it looks the same next time you visit.</li>
+          <li><strong><code>rr_last_submit_at</code></strong> &mdash; the moment you last sent a quote request.
+              It exists so that an automated script cannot fire the form dozens of times in a row.</li>
+        </ul>
+        <p>
+          None of these identify you, follow you across other websites, or feed any kind of profile.
+        </p>
+
+        <h2>How to remove them</h2>
+        <p>
+          Clearing the site data for this website in your browser's settings removes both at once.
+          In Chrome, Edge and Firefox it is under <em>Privacy &rarr; Cookies and site data</em>; in Safari,
+          under <em>Settings &rarr; Privacy &rarr; Manage website data</em>. Nothing on the site stops working
+          afterwards &mdash; you will just be asked for your light or dark preference again.
+        </p>
+
+        <h2>When you send us a quote request</h2>
+        <p>
+          At that moment, and only at that moment, your answers are sent to Formspree, which delivers them
+          to Rita's mailbox. What happens to them afterwards is described in the
+          <a href="privacy.html">privacy notice</a>.
+        </p>
+
+        <h2>If this ever changes</h2>
+        <p>
+          If a cookie is ever added to this site &mdash; for a statistics tool, for instance &mdash; this page
+          will say so before it happens, and a proper consent banner will appear.
+        </p>
+
+        <p class="updated">Last updated: 26 August 2026.</p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 data-biz="name">Rita Roncassaglia</h4>
+          <p>Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.</p>
+        </div>
+        <div><h4>Explore</h4><ul>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+        </ul></div>
+        <div><h4>Start</h4><ul>
+          <li><a href="quote.html">Request a quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#tree">Start my family tree</a></li>
+        </ul></div>
+        <div><h4>Reach us</h4><ul>
+          <li><a href="#" data-biz="email">info@example.com</a></li>
+          <li><span data-biz="location">Emilia-Romagna, Italy</span></li>
+        </ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-biz="year">2026</span> Rita Roncassaglia. <span>All rights reserved.</span></span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
+        <span>Made with care between Italy and the United States.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

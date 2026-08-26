@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (function(){
+      function apply(){
+        try{
+          if(localStorage.getItem("rr_theme")==="dark"){
+            document.documentElement.setAttribute("data-theme","dark");
+          }else{
+            document.documentElement.removeAttribute("data-theme");
+          }
+        }catch(e){}
+      }
+      apply();
+      window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+    })();
+  </script>
+  <title>Stories — Families We've Helped Come Home</title>
+  <meta name="description" content="Long-form stories from Italian-American families who have walked their ancestral villages with Rita Roncassaglia." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stories — Families We've Helped Come Home" />
+  <meta property="og:description" content="Long-form stories from Italian-American families who have walked their ancestral villages with Rita Roncassaglia." />
+  <meta property="og:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stories — Families We've Helped Come Home" />
+  <meta name="twitter:description" content="Long-form stories from Italian-American families who have walked their ancestral villages with Rita Roncassaglia." />
+  <meta name="twitter:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">R</span>
+        <span>
+          <span class="brand__name" data-biz="name">Rita Roncassaglia</span>
+          <span class="brand__tagline" data-biz="tagline">Italian Ancestry & Heritage Journeys</span>
+        </span>
+      </a>
+      <nav class="nav__group">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The Experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="quote.html"><span>Request a quote</span> <span class="arrow">→</span></a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <!-- ===================== HEADER ===================== -->
+    <section class="section section--cream-deep">
+      <div class="container container--narrow" style="text-align:center;">
+        <span class="eyebrow eyebrow--center reveal">Stories</span>
+        <h1 class="reveal">The families who already came home.</h1>
+        <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">
+          The families who travelled with Rita, in their own words.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== WHAT PEOPLE SAY ===================== -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div style="text-align:center;">
+          <span class="eyebrow eyebrow--center reveal">In their own words</span>
+          <h2 class="section-title reveal">What people say</h2>
+          <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">
+            Five families, five American states. These are their accounts in full.
+          </p>
+        </div>
+
+        <div style="margin-top: 3rem;">
+          <article class="testimonial reveal" style="margin-bottom: 2rem;">
+            <p class="testimonial__body">&ldquo;I knew my paternal grandfather&rsquo;s name and the name of the village in Sicily he left to immigrate to America. The idea of visiting the village to research names and locations was daunting. However, my desire to connect with living relatives was real. I asked Rita, my Italian friend, to accompany me to Sicily in my quest. I knew through her knowledge, experience and passion she could navigate her way through historic records at Town Hall and the Catholic Church.</p>
+            <p class="testimonial__body">Beyond her technical skills Rita is exceptionally warm and genial. There was no doubt she could easily communicate and translate if and when we connected with family. With Rita&rsquo;s help we accomplished what we set out to do. My Italian family has shown me nothing but warmth, generosity and acceptance. We have maintained contacts for four years and I will soon visit them for the third time. I am truly grateful to Rita. Through her efforts I have deeper appreciation of my heritage and a family I never knew I had.&rdquo;</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">EA</div>
+              <div>
+                <div class="testimonial__name">Estelle Arnold</div>
+                <div class="testimonial__from">Boise, Idaho</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="80" style="margin-bottom: 2rem;">
+            <p class="testimonial__body">&ldquo;Years ago my parents asked Rita to try to connect with their relatives in Sicily. She collected as much info as possible and found them! She contacted them and everybody was welcoming and open to meet us. My parents, my aunt and I flew to Italy to meet and spend some time together. It was the most incredible and emotional experience! My father had the chance to meet some first cousins and an aunt (his father&rsquo;s sister) still alive, fulfilling the dream of his life. Rita also drove us around the south of Italy and took us to visit some beautiful towns.</p>
+            <p class="testimonial__body">Thanks to Rita my family had this amazing and life-changing opportunity to reconnect with close relatives and went back several times to be with our Italian family.&rdquo;</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">GB</div>
+              <div>
+                <div class="testimonial__name">Gina and my father Joe Blundo</div>
+                <div class="testimonial__from">Gilroy, California</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="80" style="margin-bottom: 2rem;">
+            <p class="testimonial__body">&ldquo;Rita is amazing! She has a wealth of knowledge, resources and connections for myriad Italian experiences whether culinary, historical or cultural. In early 2026, on my first trip to Italy, I spent several days with Rita exploring the best of Emilia-Romagna and surrounding regions. I could not have had such a fabulous introduction to Italy without her and I can&rsquo;t wait to go back!</p>
+            <p class="testimonial__body">Grazie mille Rita! You forever have my gratitude for your generosity and friendship while I was in Italy and ever since.&rdquo;</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">GK</div>
+              <div>
+                <div class="testimonial__name">Gretchen K.</div>
+                <div class="testimonial__from">Green Valley, Arizona</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="80" style="margin-bottom: 2rem;">
+            <p class="testimonial__body">&ldquo;Rita is awesome! I am an American of Italian descent. I met Rita when I began studying Italian. I travelled with her in Sicily and in the US. She has endless positive energy, a great sense of humor, is intelligent, has never met a stranger. She is your ticket to a trip of a lifetime.&rdquo;</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">JC</div>
+              <div>
+                <div class="testimonial__name">Jean Carroccio</div>
+                <div class="testimonial__from">Denver, Colorado</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="80" style="margin-bottom: 2rem;">
+            <p class="testimonial__body">&ldquo;Our two days with Rita in May 2026 were truly magical and among the highlights of our trip to Italy. She took us through Bologna, Modena, and Parma, helping us make the most of every experience, from the Ferrari Museum to an incredible Parmigiano Reggiano tour. She also pointed us to a wonderful wine tasting that became one of our favorite memories.</p>
+            <p class="testimonial__body">Rita&rsquo;s warmth, charisma, and local knowledge made every moment special. By the end of our time together, she felt like family. We feel incredibly fortunate to have met her and recommend her wholeheartedly to anyone looking for an authentic and unforgettable experience in Emilia-Romagna.&rdquo;</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">JJ</div>
+              <div>
+                <div class="testimonial__name">Jennifer and Justin Capasso</div>
+                <div class="testimonial__from">Los Angeles, California</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-strip">
+      <div class="container">
+        <h2 class="reveal">Your story could be next.</h2>
+        <p class="reveal">Use the configurator to tell us about your family and we'll write you a quote.</p>
+        <a href="quote.html" class="btn btn--gold reveal">Request my quote <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 data-biz="name">Rita Roncassaglia</h4>
+          <p>Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.</p>
+        </div>
+        <div><h4>Explore</h4><ul>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+        </ul></div>
+        <div><h4>Start</h4><ul>
+          <li><a href="quote.html">Request a quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#tree">Start my family tree</a></li>
+        </ul></div>
+        <div><h4>Reach us</h4><ul>
+          <li><a href="#" data-biz="email">info@example.com</a></li>
+          <li><span data-biz="location">Emilia-Romagna, Italy</span></li>
+        </ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-biz="year">2026</span> Rita Roncassaglia. <span>All rights reserved.</span></span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
+        <span>Made with care between Italy and the United States.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" fill="none"><style>:root{color-scheme:light dark}</style>
+  <!-- Stylised silhouette of mainland Italy + Sicily + Sardinia -->
+  <g stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" fill="none" opacity="0.85">
+    <!-- Mainland (the "boot") -->
+    <path d="M195 35
+             c -6 6 -8 14 -6 22
+             c 2 8 8 14 6 22
+             c -2 8 -10 11 -14 18
+             c -5 9 -2 19 4 26
+             c 6 7 16 9 22 17
+             c 6 8 6 19 2 28
+             c -4 10 -12 16 -16 26
+             c -3 8 -1 17 2 25
+             c 4 10 12 17 14 28
+             c 2 9 -2 19 -8 26
+             c -8 9 -20 13 -28 22
+             c -8 9 -10 23 -4 33
+             c 5 9 16 13 20 23
+             c 4 11 -2 23 -10 31
+             c -8 8 -19 12 -24 22
+             c -5 10 -2 22 6 30
+             c 6 6 16 9 20 17
+             c 4 8 0 17 -6 22
+             c -10 9 -25 11 -33 22
+             c -7 10 -3 24 6 31
+             c 8 6 19 8 25 16
+             c 4 7 1 16 -4 21
+             c -10 11 -25 16 -32 29
+             c -7 13 -2 30 10 38
+             c 11 8 26 8 38 14
+             c 12 6 22 19 19 32
+             c -3 14 -19 22 -32 19" />
+    <!-- Heel of Italy (Puglia) -->
+    <path d="M232 470
+             c 18 -2 36 -4 53 -10
+             c 14 -5 26 -16 26 -31
+             c 0 -14 -14 -23 -28 -23
+             c -14 0 -28 8 -38 18" />
+    <!-- Sicily -->
+    <path d="M118 545
+             c 18 -8 38 -10 56 -5
+             c 14 4 26 14 28 28
+             c 2 14 -10 26 -23 30
+             c -16 5 -34 1 -47 -10
+             c -10 -8 -16 -22 -14 -34
+             z" />
+    <!-- Sardinia -->
+    <path d="M58 360
+             c -10 16 -10 36 -2 53
+             c 8 15 24 25 41 22
+             c 16 -3 27 -19 27 -34
+             c 0 -16 -10 -32 -25 -39
+             c -14 -7 -32 -4 -41 -2 z" />
+  </g>
+</svg>

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="An Italian hilltop village at golden hour, with a bell tower, cypress trees and vineyards">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#E9A36B"/>
+      <stop offset="0.35" stop-color="#EFC079"/>
+      <stop offset="0.68" stop-color="#F4D9A0"/>
+      <stop offset="1"    stop-color="#F8EBCB"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0"   stop-color="#FFF6DF" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#FCE4A8" stop-opacity="0.7"/>
+      <stop offset="1"   stop-color="#FCE4A8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9A578"/>
+      <stop offset="1" stop-color="#BE9A6E"/>
+    </linearGradient>
+    <linearGradient id="hillMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9D9A5E"/>
+      <stop offset="1" stop-color="#8B8C52"/>
+    </linearGradient>
+    <linearGradient id="hillTown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8B954F"/>
+      <stop offset="1" stop-color="#6E7F4F"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#647138"/>
+      <stop offset="1" stop-color="#54623C"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C0492C"/>
+      <stop offset="1" stop-color="#9A3A23"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky + sun -->
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <circle cx="560" cy="250" r="300" fill="url(#sun)"/>
+  <circle cx="560" cy="250" r="92" fill="#FFF7E4" opacity="0.85"/>
+
+  <!-- Distant birds -->
+  <g stroke="#9A3A23" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.45">
+    <path d="M250 210 q12 -10 24 0 q12 -10 24 0"/>
+    <path d="M320 250 q9 -8 18 0 q9 -8 18 0"/>
+    <path d="M210 270 q7 -6 14 0 q7 -6 14 0"/>
+  </g>
+
+  <!-- Far hills -->
+  <path d="M0 560 C 160 510, 320 540, 470 520 C 620 500, 720 545, 800 525 L800 1000 L0 1000 Z" fill="url(#hillFar)" opacity="0.75"/>
+  <!-- Mid hills -->
+  <path d="M0 640 C 180 590, 340 625, 520 610 C 660 598, 740 635, 800 618 L800 1000 L0 1000 Z" fill="url(#hillMid)" opacity="0.9"/>
+
+  <!-- Town hill -->
+  <path d="M0 720 C 150 690, 300 705, 430 690 C 470 686, 500 660, 540 640 C 600 612, 680 660, 800 648 L800 1000 L0 1000 Z" fill="url(#hillTown)"/>
+
+  <!-- ===== Hilltop village ===== -->
+  <g transform="translate(360 470)">
+    <!-- back houses -->
+    <g>
+      <rect x="44" y="120" width="46" height="70" fill="#E8D9BC"/>
+      <path d="M40 120 L67 100 L94 120 Z" fill="url(#roof)"/>
+      <rect x="92" y="128" width="40" height="62" fill="#DFCDAC"/>
+      <path d="M88 128 L112 110 L136 128 Z" fill="url(#roof)"/>
+    </g>
+
+    <!-- campanile (bell tower) -->
+    <g>
+      <rect x="6" y="20" width="40" height="172" fill="#ECDDC0"/>
+      <rect x="6" y="20" width="40" height="172" fill="#000" opacity="0.06"/>
+      <path d="M2 24 L26 0 L50 24 Z" fill="url(#roof)"/>
+      <rect x="22" y="-14" width="4" height="16" fill="#7A5A2E"/>
+      <path d="M16 -8 h20 M24 -16 v20" stroke="#7A5A2E" stroke-width="3"/>
+      <!-- bell openings -->
+      <path d="M16 56 a8 8 0 0 1 16 0 v18 h-16 Z" fill="#5B4327"/>
+      <path d="M16 104 a8 8 0 0 1 16 0 v16 h-16 Z" fill="#5B4327"/>
+      <circle cx="24" cy="150" r="9" fill="#EFE3CB" stroke="#5B4327" stroke-width="2"/>
+      <path d="M24 141 v18 M15 150 h18" stroke="#5B4327" stroke-width="1.5"/>
+    </g>
+
+    <!-- front houses -->
+    <g>
+      <rect x="-78" y="150" width="64" height="92" fill="#F1E6CD"/>
+      <path d="M-84 150 L-46 122 L-8 150 Z" fill="url(#roof)"/>
+      <rect x="-66" y="178" width="14" height="20" fill="#9A8A6B" opacity="0.8"/>
+      <rect x="-44" y="178" width="14" height="20" fill="#9A8A6B" opacity="0.8"/>
+      <rect x="-58" y="208" width="18" height="34" fill="#7A5A2E"/>
+
+      <rect x="-10" y="170" width="74" height="92" fill="#E7D2A8"/>
+      <path d="M-16 170 L21 144 L70 170 Z" fill="url(#roof)"/>
+      <rect x="4" y="196" width="16" height="22" fill="#9A8A6B" opacity="0.8"/>
+      <rect x="34" y="196" width="16" height="22" fill="#9A8A6B" opacity="0.8"/>
+      <rect x="14" y="228" width="22" height="34" fill="#7A5A2E"/>
+
+      <rect x="70" y="190" width="56" height="74" fill="#EFE0C2"/>
+      <path d="M64 190 L98 166 L132 190 Z" fill="url(#roof)"/>
+      <rect x="86" y="214" width="14" height="20" fill="#9A8A6B" opacity="0.8"/>
+    </g>
+
+    <!-- dome -->
+    <g transform="translate(150 96)">
+      <path d="M0 60 a34 38 0 0 1 68 0 Z" fill="#B9633F"/>
+      <path d="M0 60 a34 38 0 0 1 68 0 Z" fill="#000" opacity="0.05"/>
+      <rect x="30" y="2" width="8" height="14" fill="#C9A24B"/>
+      <circle cx="34" cy="2" r="4" fill="#C9A24B"/>
+      <rect x="-2" y="58" width="72" height="10" fill="#EFE0C2"/>
+    </g>
+  </g>
+
+  <!-- Winding road -->
+  <path d="M470 1000 C 430 880, 520 820, 470 760 C 430 712, 470 690, 470 660"
+        fill="none" stroke="#D9C49A" stroke-width="34" stroke-linecap="round" opacity="0.9"/>
+  <path d="M470 1000 C 430 880, 520 820, 470 760 C 430 712, 470 690, 470 660"
+        fill="none" stroke="#EBDDBC" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- Cypress trees lining the road -->
+  <g fill="url(#hillNear)">
+    <path d="M250 700 q-13 -2 -13 -42 q0 -52 13 -88 q13 36 13 88 q0 40 -13 42 Z"/>
+    <path d="M300 730 q-11 -2 -11 -36 q0 -46 11 -78 q11 32 11 78 q0 34 -11 36 Z"/>
+    <path d="M585 690 q-12 -2 -12 -40 q0 -50 12 -84 q12 34 12 84 q0 38 -12 40 Z"/>
+    <path d="M640 720 q-10 -2 -10 -34 q0 -44 10 -74 q10 30 10 74 q0 32 -10 34 Z"/>
+  </g>
+
+  <!-- Near hill (foreground) with vineyard rows -->
+  <path d="M0 780 C 160 740, 320 770, 470 752 C 620 736, 720 775, 800 760 L800 1000 L0 1000 Z" fill="url(#hillNear)"/>
+  <g stroke="#3F4A2A" stroke-width="2.5" opacity="0.45" stroke-linecap="round">
+    <path d="M-20 840 C 200 812, 420 826, 820 812"/>
+    <path d="M-20 880 C 200 854, 420 868, 820 854"/>
+    <path d="M-20 922 C 200 896, 420 910, 820 896"/>
+    <path d="M-20 966 C 200 940, 420 956, 820 940"/>
+  </g>
+  <!-- vine stakes -->
+  <g stroke="#2F381F" stroke-width="2" opacity="0.3">
+    <path d="M120 838 v-14 M260 832 v-14 M400 836 v-14 M540 830 v-14 M680 832 v-14"/>
+  </g>
+</svg>

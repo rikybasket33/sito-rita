@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none"><style>:root{color-scheme:light dark}</style>
+  <!-- A small flourish for corners of cards and photos -->
+  <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none">
+    <path d="M5 75 L5 25 Q5 5 25 5 L75 5"/>
+    <path d="M12 60 Q14 40 30 30 Q44 22 60 22"/>
+    <circle cx="62" cy="22" r="2.4" fill="currentColor"/>
+    <circle cx="14" cy="60" r="2" fill="currentColor"/>
+    <path d="M22 22 q 6 -6 14 -2"/>
+    <path d="M40 14 q 6 0 9 6"/>
+  </g>
+</svg>

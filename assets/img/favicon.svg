@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Brand monogram: terracotta disc, gold ring, cream serif R -->
+  <defs>
+    <linearGradient id="fav-disc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C0492C"/>
+      <stop offset="1" stop-color="#9A3A23"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#fav-disc)"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#C9A24B" stroke-width="2.5"/>
+  <text x="32" y="44" text-anchor="middle"
+        font-family="Georgia, 'Playfair Display', serif" font-weight="700"
+        font-size="38" fill="#FFFBF3" letter-spacing="-1">R</text>
+</svg>

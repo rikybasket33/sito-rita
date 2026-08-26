@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Tuscan-inspired layered hills background, used inside the hero -->
+  <defs>
+    <linearGradient id="hill1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#E2C886" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#E2C886" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#C0492C" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#C0492C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hill3" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#6E7F4F" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#6E7F4F" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hill4" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#7A2E2E" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#7A2E2E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky-side warmth -->
+  <g opacity="0.6">
+    <circle cx="1280" cy="180" r="280" fill="#E2C886" fill-opacity="0.18"/>
+    <circle cx="1280" cy="180" r="180" fill="#C9A24B" fill-opacity="0.12"/>
+  </g>
+
+  <!-- Far hills -->
+  <path d="M0 560 C 200 480, 360 520, 520 500 C 700 480, 880 540, 1050 520 C 1240 500, 1400 560, 1600 540 L 1600 900 L 0 900 Z" fill="url(#hill1)"/>
+  <!-- Mid hills -->
+  <path d="M0 620 C 220 570, 380 600, 560 590 C 740 580, 900 620, 1080 600 C 1280 580, 1430 630, 1600 610 L 1600 900 L 0 900 Z" fill="url(#hill3)"/>
+  <!-- Front hills -->
+  <path d="M0 700 C 200 670, 380 710, 560 700 C 760 690, 920 720, 1100 710 C 1280 700, 1440 730, 1600 720 L 1600 900 L 0 900 Z" fill="url(#hill2)"/>
+  <!-- Foreground -->
+  <path d="M0 800 C 220 770, 400 810, 600 800 C 800 790, 980 820, 1180 810 C 1340 800, 1480 820, 1600 815 L 1600 900 L 0 900 Z" fill="url(#hill4)"/>
+
+  <!-- Cypress trees silhouette -->
+  <g fill="#54623C" opacity="0.42">
+    <ellipse cx="220" cy="690" rx="8" ry="38"/>
+    <ellipse cx="240" cy="694" rx="9" ry="42"/>
+    <ellipse cx="262" cy="690" rx="8" ry="40"/>
+    <ellipse cx="1090" cy="710" rx="7" ry="34"/>
+    <ellipse cx="1108" cy="714" rx="8" ry="38"/>
+    <ellipse cx="1128" cy="712" rx="7" ry="36"/>
+    <ellipse cx="1430" cy="700" rx="7" ry="34"/>
+    <ellipse cx="1448" cy="702" rx="7" ry="36"/>
+  </g>
+
+  <!-- A faint vineyard rhythm -->
+  <g stroke="#54623C" stroke-width="1" opacity="0.10">
+    <line x1="0" y1="760" x2="1600" y2="780"/>
+    <line x1="0" y1="780" x2="1600" y2="800"/>
+    <line x1="0" y1="800" x2="1600" y2="820"/>
+  </g>
+</svg>

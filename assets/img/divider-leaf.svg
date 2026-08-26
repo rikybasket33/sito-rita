@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none"><style>:root{color-scheme:light dark}</style>
+  <!-- Centred leaf used as a divider mark -->
+  <g fill="currentColor">
+    <path d="M20 4 C 8 14, 8 26, 20 36 C 32 26, 32 14, 20 4 Z" opacity="0.85"/>
+  </g>
+  <g stroke="#F6EFE3" stroke-width="0.7" fill="none" opacity="0.6">
+    <path d="M20 6 L 20 34"/>
+    <path d="M20 12 Q 14 16, 12 22"/>
+    <path d="M20 12 Q 26 16, 28 22"/>
+    <path d="M20 20 Q 14 22, 12 28"/>
+    <path d="M20 20 Q 26 22, 28 28"/>
+  </g>
+</svg>

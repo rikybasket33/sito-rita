@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (function(){
+      function apply(){
+        try{
+          if(localStorage.getItem("rr_theme")==="dark"){
+            document.documentElement.setAttribute("data-theme","dark");
+          }else{
+            document.documentElement.removeAttribute("data-theme");
+          }
+        }catch(e){}
+      }
+      apply();
+      window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+    })();
+  </script>
+  <title>Privacy notice — Rita Roncassaglia</title>
+  <meta name="description" content="What this website collects, what happens to a quote request, and how the living relatives found during the research are protected." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Privacy notice — Rita Roncassaglia" />
+  <meta property="og:description" content="What this website collects, what happens to a quote request, and how the living relatives found during the research are protected." />
+  <meta property="og:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy notice — Rita Roncassaglia" />
+  <meta name="twitter:description" content="What this website collects, what happens to a quote request, and how the living relatives found during the research are protected." />
+  <meta name="twitter:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <style>
+    .legal h2 {
+      font-size: 1.45rem;
+      margin: 2.6rem 0 0.7rem;
+    }
+    .legal h2:first-of-type { margin-top: 0; }
+    .legal p, .legal li { color: var(--c-ink-soft); }
+    .legal ul { margin: 0.6rem 0 0 1.1rem; }
+    .legal li { margin-bottom: 0.45rem; }
+    .legal .updated {
+      margin-top: 3rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--c-line);
+      font-size: 0.9rem;
+      color: var(--c-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">R</span>
+        <span>
+          <span class="brand__name" data-biz="name">Rita Roncassaglia</span>
+          <span class="brand__tagline" data-biz="tagline">Italian Ancestry & Heritage Journeys</span>
+        </span>
+      </a>
+      <nav class="nav__group">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The Experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="quote.html"><span>Request a quote</span> <span class="arrow">→</span></a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <section class="section section--tight section--cream-deep">
+      <div class="container container--narrow" style="text-align:center;">
+        <span class="eyebrow eyebrow--center reveal">Privacy</span>
+        <h1 class="reveal">What happens to your data.</h1>
+        <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">A short page, because there is not much to tell: this site collects nothing on its own, and what you send us is used only to answer you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow legal">
+        <h2>Who is responsible for your data</h2>
+        <p>
+          The person responsible for the personal data described here &mdash; the
+          <em>data controller</em>, in the words of the European regulation &mdash; is
+          <strong data-biz="name">Rita Roncassaglia</strong>, working from
+          <span data-biz="location">Emilia-Romagna, Italy</span>.
+          You can reach her at <a href="#" data-biz="email">info@example.com</a> about anything on this page.
+        </p>
+
+        <h2>What this website collects on its own</h2>
+        <p>
+          Nothing. There is no analytics service, no advertising, no tracking pixel, no social media
+          plugin and no embedded third-party content on these pages. The typefaces are served from this
+          site itself rather than from Google, so simply reading a page sends your data nowhere.
+        </p>
+
+        <h2>When you ask for a quote</h2>
+        <p>
+          The form on the <a href="quote.html">quote page</a> asks for your name, your email address,
+          optionally your phone number and country, and what you are looking for: the package, the add-ons,
+          the surnames and villages you already know, your travel preferences, and anything you choose to
+          write in the notes.
+        </p>
+        <ul>
+          <li><strong>Why we need it.</strong> To write your quote and to reply to you. Nothing else.</li>
+          <li><strong>The legal basis.</strong> Steps taken at your own request before a contract
+              (Art. 6(1)(b) GDPR). If you write to us out of simple curiosity, the basis is our legitimate
+              interest in answering you (Art. 6(1)(f)).</li>
+          <li><strong>Where it goes.</strong> The form is delivered by <strong>Formspree, Inc.</strong>
+              (United States), which acts only as our processor and passes the message on to Rita's mailbox.
+              The transfer relies on the European Commission's standard contractual clauses.</li>
+          <li><strong>How long we keep it.</strong> For as long as the conversation is alive, and afterwards
+              for as long as we are required to keep records of our correspondence. If you ask us to delete
+              your request, we delete it.</li>
+          <li><strong>What we never do.</strong> We do not sell your data, we do not share it with hotels,
+              restaurants or tour operators, and we do not add you to a mailing list.</li>
+        </ul>
+
+        <h2>What is stored in your browser</h2>
+        <p>
+          This site sets no cookies. It uses your browser's local storage for two small things, both of
+          which stay on your own device &mdash; see the <a href="cookies.html">cookie page</a> for the detail.
+        </p>
+
+        <h2>The people we find in Italy</h2>
+        <p>
+          This is the part that deserves more than a line. Genealogical research works on civil and parish
+          records, and sometimes it leads to people who are still alive. Those people did not ask to be
+          found, so:
+        </p>
+        <ul>
+          <li>Rita approaches them first, in person or by letter, and tells them plainly who is looking
+              for them and why (this is the information notice required by Art. 14 GDPR).</li>
+          <li><strong>Nothing about them reaches the client until they say yes.</strong> No name, no address,
+              no photograph, no introduction.</li>
+          <li>They can say no, say nothing, or change their mind later, and that decision is final.
+              They can also ask Rita to erase whatever she holds about them, at any time.</li>
+          <li>Records concerning people who have died are not personal data under the GDPR, but they are
+              still treated with care, because they belong to families who are alive.</li>
+        </ul>
+
+        <h2>Your rights</h2>
+        <p>
+          You can ask to see the data we hold about you, to correct it, to have it deleted, to restrict how
+          we use it, to receive a copy in a portable format, or to object to our using it. Write to
+          <a href="#" data-biz="email">info@example.com</a> and you will get an answer within a month.
+        </p>
+        <p>
+          If you believe we have handled your data badly, you can complain to the Italian supervisory
+          authority, the <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">Garante per la
+          protezione dei dati personali</a>, or to the authority in the country where you live.
+        </p>
+
+        <h2>Changes to this notice</h2>
+        <p>
+          If the way this site works changes &mdash; a new form, a new service, anything that touches your
+          data &mdash; this page is updated first, and the date below changes with it.
+        </p>
+
+        <p class="updated">Last updated: 26 August 2026.</p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 data-biz="name">Rita Roncassaglia</h4>
+          <p>Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.</p>
+        </div>
+        <div><h4>Explore</h4><ul>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+        </ul></div>
+        <div><h4>Start</h4><ul>
+          <li><a href="quote.html">Request a quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#tree">Start my family tree</a></li>
+        </ul></div>
+        <div><h4>Reach us</h4><ul>
+          <li><a href="#" data-biz="email">info@example.com</a></li>
+          <li><span data-biz="location">Emilia-Romagna, Italy</span></li>
+        </ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-biz="year">2026</span> Rita Roncassaglia. <span>All rights reserved.</span></span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
+        <span>Made with care between Italy and the United States.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

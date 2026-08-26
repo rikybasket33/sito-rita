@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (function(){
+      function apply(){
+        try{
+          if(localStorage.getItem("rr_theme")==="dark"){
+            document.documentElement.setAttribute("data-theme","dark");
+          }else{
+            document.documentElement.removeAttribute("data-theme");
+          }
+        }catch(e){}
+      }
+      apply();
+      window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+    })();
+  </script>
+  <title>Rita Roncassaglia — Italian Ancestry & Heritage Journeys</title>
+  <meta name="description" content="Discover your Italian roots. Rita Roncassaglia researches family histories across Italian municipalities and accompanies American families to the villages of their ancestors." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+
+  <!-- Social cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rita Roncassaglia — Italian Ancestry & Heritage Journeys" />
+  <meta property="og:description" content="We trace your Italian ancestors to the parish records, the home town, and — when they consent — the living relatives who still remember the name." />
+  <meta property="og:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rita Roncassaglia — Italian Ancestry & Heritage Journeys" />
+  <meta name="twitter:description" content="Find the village your family came from. Document research and heritage journeys across Italy." />
+  <meta name="twitter:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- Structured data: helps Google show the business correctly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Rita Roncassaglia — Italian Ancestry & Heritage Journeys",
+    "description": "Italian ancestry research and heritage journeys for American families.",
+    "areaServed": "IT",
+    "knowsLanguage": ["en", "it"],
+    "address": { "@type": "PostalAddress", "addressRegion": "Emilia-Romagna", "addressCountry": "IT" },
+    "founder": { "@type": "Person", "name": "Rita Roncassaglia" }
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= NAV ============================= -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand__mark">R</span>
+        <span>
+          <span class="brand__name" data-biz="name">Rita Roncassaglia</span>
+          <span class="brand__tagline" data-biz="tagline">Italian Ancestry &amp; Heritage Journeys</span>
+        </span>
+      </a>
+      <nav class="nav__group">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The Experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="quote.html"><span>Request a quote</span> <span class="arrow">→</span></a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <!-- ============================= HERO ============================= -->
+    <section class="hero">
+      <div class="hero__bg" data-parallax="0.15" aria-hidden="true">
+        <img src="assets/img/hero-pattern.svg" alt="" />
+      </div>
+
+      <div class="container hero__inner">
+        <div>
+          <span class="eyebrow">Italy &mdash; for those who carry her in their name</span>
+          <h1 class="hero__title" data-word-reveal>
+            Find the village
+            <span class="italic">your family</span>
+            <span class="underline">came from.</span>
+          </h1>
+          <p class="hero__lead reveal" data-delay="400">
+            We trace your Italian ancestors back to the parish records, the stone streets and — when they consent — the living relatives who still remember the name.
+          </p>
+          <div class="hero__ctas reveal" data-delay="500">
+            <a class="btn btn--primary" href="quote.html"><span>Request a custom quote</span> <span class="arrow">→</span></a>
+            <a class="btn btn--ghost" href="experience.html">See how it works</a>
+          </div>
+        </div>
+
+        <figure class="hero__visual media-frame media-frame--portrait reveal reveal--right" data-delay="300">
+          <img class="media-frame__img" src="assets/img/hero-village.svg" alt="An Italian hilltop village at golden hour, with a bell tower, cypress trees and vineyards" />
+          <span class="media-frame__rule" aria-hidden="true"></span>
+          <span class="media-frame__corner media-frame__corner--tl" aria-hidden="true">
+            <svg viewBox="0 0 80 80" fill="none"><g stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5 75 L5 25 Q5 5 25 5 L75 5"/><path d="M12 60 Q14 40 30 30 Q44 22 60 22"/><circle cx="62" cy="22" r="2.4" fill="currentColor"/><circle cx="14" cy="60" r="2" fill="currentColor"/><path d="M22 22 q 6 -6 14 -2"/><path d="M40 14 q 6 0 9 6"/></g></svg>
+          </span>
+          <span class="media-frame__corner media-frame__corner--br" aria-hidden="true">
+            <svg viewBox="0 0 80 80" fill="none"><g stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5 75 L5 25 Q5 5 25 5 L75 5"/><path d="M12 60 Q14 40 30 30 Q44 22 60 22"/><circle cx="62" cy="22" r="2.4" fill="currentColor"/><circle cx="14" cy="60" r="2" fill="currentColor"/><path d="M22 22 q 6 -6 14 -2"/><path d="M40 14 q 6 0 9 6"/></g></svg>
+          </span>
+          <figcaption class="media-frame__caption">
+            <strong>“Where are you really from?”</strong>
+            <span>Let us answer it — with documents, with land, with people.</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="scroll-cue">scroll</div>
+    </section>
+
+    <!-- ============================= TRUST STRIP ============================= -->
+    <section class="trust" aria-label="Why families choose Rita">
+      <div class="container trust__inner">
+        <div class="trust__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span>Hands-on archive research</span>
+        </div>
+        <div class="trust__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>
+          <span>Anywhere in Italy</span>
+        </div>
+        <div class="trust__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>
+          <span>One family at a time</span>
+        </div>
+        <div class="trust__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+          <span>A reply within 48 hours</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= INTRO / VALUE ============================= -->
+    <section class="section section--cream">
+      <div class="container">
+        <div style="text-align:center;">
+          <span class="eyebrow eyebrow--center reveal">What we do</span>
+          <h2 class="section-title reveal">Italian roots, found and walked</h2>
+          <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">
+            We work with American families who already have a family tree and want the next chapter:
+            the actual paper trail, the home town, and — if your relatives in Italy agree — the reunion itself.
+          </p>
+        </div>
+
+        <div class="feature-grid" style="margin-top: 3rem;">
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7h18M3 12h18M3 17h12"/><circle cx="20" cy="17" r="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Document research</h3>
+            <p class="feature__body">
+              We visit Italian municipal archives, parish registers and state archives in person — the records
+              that don't live online — to verify your tree branch by branch.
+            </p>
+          </article>
+
+          <article class="feature reveal" data-delay="100">
+            <div class="feature__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-7-6-7-12a7 7 0 0114 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Ancestral villages</h3>
+            <p class="feature__body">
+              We locate the birthplaces of your ancestors and confirm what still stands —
+              the house, the church, the cemetery, the road that led them to the ship.
+            </p>
+          </article>
+
+          <article class="feature reveal" data-delay="200">
+            <div class="feature__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 11a5 5 0 10-10 0M3 21v-2a7 7 0 017-7h4a7 7 0 017 7v2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Living relatives</h3>
+            <p class="feature__body">
+              If we find descendants of your family still living in Italy, we approach them with care
+              and only with their consent do we put you in touch — or arrange a visit.
+            </p>
+          </article>
+
+          <article class="feature reveal" data-delay="300">
+            <div class="feature__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">The real off-path Italian lifestyle</h3>
+            <p class="feature__body">
+              Rita can accompany you through the regions, drive when needed, translate at the meetings,
+              and point you to the food &amp; wine worth your time — anywhere in Italy.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= ABOUT TEASER ============================= -->
+    <section class="section">
+      <div class="container">
+        <div class="profile">
+          <figure class="profile__media media-frame media-frame--square reveal reveal--left" style="margin:0;">
+            <img class="media-frame__img" src="assets/img/hero-village.svg" alt="" aria-hidden="true" />
+            <span class="media-frame__rule" aria-hidden="true"></span>
+            <span class="media-frame__badge">A photograph of Rita will live here</span>
+            <span class="media-frame__corner media-frame__corner--tl" aria-hidden="true">
+              <svg viewBox="0 0 80 80" fill="none"><g stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5 75 L5 25 Q5 5 25 5 L75 5"/><path d="M12 60 Q14 40 30 30 Q44 22 60 22"/><circle cx="62" cy="22" r="2.4" fill="currentColor"/><circle cx="14" cy="60" r="2" fill="currentColor"/><path d="M22 22 q 6 -6 14 -2"/><path d="M40 14 q 6 0 9 6"/></g></svg>
+            </span>
+            <span class="media-frame__corner media-frame__corner--br" aria-hidden="true">
+              <svg viewBox="0 0 80 80" fill="none"><g stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5 75 L5 25 Q5 5 25 5 L75 5"/><path d="M12 60 Q14 40 30 30 Q44 22 60 22"/><circle cx="62" cy="22" r="2.4" fill="currentColor"/><circle cx="14" cy="60" r="2" fill="currentColor"/><path d="M22 22 q 6 -6 14 -2"/><path d="M40 14 q 6 0 9 6"/></g></svg>
+            </span>
+          </figure>
+          <div class="profile__body reveal reveal--right">
+            <span class="eyebrow">Who is Rita</span>
+            <h2>About Rita</h2>
+            <p>
+              Graduated from Bologna University in 1995 with a major in Linguistics – English Language
+              and Literature, I have lived, worked and travelled between USA and Italy for thirty years.
+            </p>
+            <p>
+              The best part of my job is helping people from all over the world to build connections and
+              establish relationships as they discover and fall in love with Italy. My goal is to assist
+              you in finding your family's hometown, learning about your Italian ancestors and whenever
+              possible reconnect with your living relatives.
+            </p>
+            <p>
+              <a href="about.html" class="btn btn--ghost" style="margin-top: 0.6rem;"><span>Read Rita's full story</span> <span class="arrow">→</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PACKAGES PREVIEW ============================= -->
+    <section class="section section--cream-deep">
+      <div class="container">
+        <div style="text-align:center;">
+          <span class="eyebrow eyebrow--center reveal">Two ways to begin</span>
+          <h2 class="section-title reveal">Choose your level of immersion</h2>
+          <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">
+            Every journey is shaped around your family, so there are no fixed price lists.
+            Tell us what you want and we will write you a quote.
+          </p>
+        </div>
+
+        <div class="packages" style="margin-top: 3rem;">
+          <article class="package reveal">
+            <h3 class="package__name">The Research Package</h3>
+            <p class="package__sub">For families who want answers, from afar.</p>
+            <ul class="package__list">
+              <li>Verification of your existing family tree against Italian records</li>
+              <li>On-site visits to the relevant municipalities and parishes</li>
+              <li>Photographs of the ancestral house, street, church</li>
+              <li>Discreet search for descendants still living in Italy</li>
+              <li>Written report &mdash; what we found, what we couldn't find, and why</li>
+              <li>Rita does the research on her own; you receive the result</li>
+            </ul>
+            <p class="package__note">
+              Travel and archive fees are reimbursed at cost. We share receipts.
+            </p>
+            <a href="services.html#research" class="btn btn--ghost">More details</a>
+          </article>
+
+          <article class="package package--featured reveal" data-delay="150">
+            <div class="package__ribbon">Most chosen</div>
+            <h3 class="package__name">The Full Heritage Journey</h3>
+            <p class="package__sub">For families ready to come home.</p>
+            <ul class="package__list">
+              <li>Everything in the Research Package — and you can join Rita in the research</li>
+              <li>Rita as your personal assistant during the entire stay</li>
+              <li>Rita can drive your rental car &mdash; or you can drive (<a href="services.html#driving">how the insurance works</a>)</li>
+              <li>Translated meetings with the relatives who agreed to meet you</li>
+              <li>Optional food &amp; wine suggestions anywhere in Italy — you book directly</li>
+              <li>Certified copies of the records we find for your family</li>
+            </ul>
+            <p class="package__note">
+              Fully customisable. Configure your preferences when you request a quote.
+            </p>
+            <a href="services.html#journey" class="btn btn--primary"><span>More details</span> <span class="arrow">→</span></a>
+          </article>
+        </div>
+
+        <p class="reveal" style="text-align:center; margin-top: 2.5rem; color: var(--c-ink-soft);">
+          <em>Don't have a family tree yet?</em> &nbsp;
+          We can suggest you to start one on
+          <a href="https://www.familysearch.org" target="_blank" rel="noopener">FamilySearch.org</a>,
+          which is free &mdash; <a href="contact.html#tree">here is where to begin</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= TESTIMONIALS PREVIEW ============================= -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align:center;">
+          <span class="eyebrow eyebrow--center reveal">What families say</span>
+          <h2 class="section-title reveal">Reviews</h2>
+        </div>
+
+        <div class="testimonials-grid" style="margin-top: 3rem;">
+          <article class="testimonial reveal">
+            <p class="testimonial__body">
+              &ldquo;I am truly grateful to Rita. Through her skills and efforts I have a deeper appreciation of my heritage and a family I never knew I had&rdquo;
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">EA</div>
+              <div>
+                <div class="testimonial__name">Estelle Arnold</div>
+                <div class="testimonial__from">Boise, Idaho</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="80">
+            <p class="testimonial__body">
+              &ldquo;Thanks to Rita my family had this amazing and life-changing opportunity to reconnect with close relatives and after this first time, went back several times to be with our Italian family.&rdquo;
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">GB</div>
+              <div>
+                <div class="testimonial__name">Gina and my father Joe Blundo</div>
+                <div class="testimonial__from">Gilroy, California</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="160">
+            <p class="testimonial__body">
+              &ldquo;Rita is awesome! I am an American of Italian descent. She has endless positive energy, a great sense of humour, she is intelligent, has never met a stranger. She&rsquo;s your ticket to a trip of a lifetime.&rdquo;
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">JC</div>
+              <div>
+                <div class="testimonial__name">Jean Carroccio</div>
+                <div class="testimonial__from">Denver, Colorado</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="240">
+            <p class="testimonial__body">
+              &ldquo;Rita&rsquo;s warmth, charisma, and local knowledge made every moment special. By the end of our time together, she felt like family. We feel incredibly fortunate to have met her and recommend her wholeheartedly to anyone looking for an authentic and unforgettable experience&rdquo;
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">JJ</div>
+              <div>
+                <div class="testimonial__name">Jennifer and Justin Capasso</div>
+                <div class="testimonial__from">Los Angeles, California</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="320">
+            <p class="testimonial__body">
+              &ldquo;Rita is amazing! She has a wealth of knowledge, resources and connections for myriad Italian experiences. I could not have had such a fabulous introduction to Italy without her and I can&rsquo;t wait to go back! Grazie mille!&rdquo;
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">GK</div>
+              <div>
+                <div class="testimonial__name">Gretchen K.</div>
+                <div class="testimonial__from">Green Valley, Arizona</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="reveal" style="text-align:center; margin-top: 2.5rem;">
+          <a href="testimonials.html" class="btn btn--ghost"><span>Read more stories</span> <span class="arrow">→</span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= BOOKING ============================= -->
+    <section class="section section--cream" id="book">
+      <div class="container">
+        <div class="booking-card reveal">
+          <div class="booking-card__body">
+            <span class="eyebrow">No pressure, no cost</span>
+            <h3>Prefer to talk first? Email Rita for a free call.</h3>
+            <p>
+              Fifteen minutes with Rita, in English, to look at your family tree together and see whether this is the right path for you. No obligation, no fee.
+            </p>
+          </div>
+          <div class="booking-card__cta">
+            <a class="btn btn--primary" href="mailto:?subject=A free call with Rita" data-biz-email-href><span>Email Rita to set a date</span> <span class="arrow">→</span></a>
+            <span class="booking-card__note">Write to Rita and you will agree a date and a time for the call.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CTA STRIP ============================= -->
+    <section class="cta-strip">
+      <div class="container">
+        <span class="eyebrow eyebrow--center reveal" style="color:var(--c-gold-soft);">Begin</span>
+        <h2 class="reveal">Tell us about your family.<br>We'll tell you where in Italy it started.</h2>
+        <p class="reveal">
+          Use the interactive configurator to pick a package, add the options you want,
+          and we'll write you a personalised quote. No fixed prices, no surprises.
+        </p>
+        <a href="quote.html" class="btn btn--gold reveal"><span>Build my quote</span> <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 data-biz="name">Rita Roncassaglia</h4>
+          <p>Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Rita</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="experience.html">The experience</a></li>
+            <li><a href="testimonials.html">Stories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Start</h4>
+          <ul>
+            <li><a href="quote.html">Request a quote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#tree">Start my family tree</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul>
+            <li><a href="#" data-biz="email">info@example.com</a></li>
+            <li><span data-biz="location">Emilia-Romagna, Italy</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-biz="year">2026</span> Rita Roncassaglia. <span>All rights reserved.</span></span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
+        <span>Made with care between Italy and the United States.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

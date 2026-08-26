@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="An open antique parish register with handwriting, a wax seal and a ribbon bookmark">
+  <defs>
+    <linearGradient id="pr-pageL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F4EAD3"/>
+      <stop offset="1" stop-color="#EADCBE"/>
+    </linearGradient>
+    <linearGradient id="pr-pageR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EFE2C6"/>
+      <stop offset="1" stop-color="#F3E9D2"/>
+    </linearGradient>
+    <linearGradient id="pr-cover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A2E2E"/>
+      <stop offset="1" stop-color="#5B2020"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft shadow -->
+  <ellipse cx="320" cy="468" rx="270" ry="34" fill="#2B1F17" opacity="0.12"/>
+
+  <!-- Leather cover -->
+  <path d="M40 110 Q320 70 600 110 L612 430 Q320 396 28 430 Z" fill="url(#pr-cover)"/>
+  <path d="M40 110 Q320 70 600 110 L600 124 Q320 86 40 124 Z" fill="#C9A24B" opacity="0.55"/>
+  <path d="M28 430 Q320 396 612 430 L606 446 Q320 414 34 446 Z" fill="#C9A24B" opacity="0.45"/>
+
+  <!-- Pages -->
+  <path d="M60 124 Q320 92 580 124 L592 416 Q320 384 48 416 Z" fill="#D8C7A2"/>
+  <!-- Left page -->
+  <path d="M70 132 Q195 114 318 126 L318 404 Q195 392 58 408 Z" fill="url(#pr-pageL)"/>
+  <!-- Right page -->
+  <path d="M322 126 Q445 114 570 132 L582 408 Q445 392 322 404 Z" fill="url(#pr-pageR)"/>
+  <!-- center gutter -->
+  <path d="M320 124 L320 404" stroke="#B7A179" stroke-width="3" opacity="0.6"/>
+  <path d="M320 124 L320 404" stroke="#8C7950" stroke-width="1" opacity="0.5"/>
+
+  <!-- Handwriting — left page -->
+  <g stroke="#6B4E2E" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0.62">
+    <path d="M92 168 q14 -7 28 0 t28 0 t28 0 t26 2"/>
+    <path d="M92 196 q12 -6 24 -1 t30 1 t24 -2 t30 2"/>
+    <path d="M92 224 q16 -6 30 0 t26 1 t30 -1"/>
+    <path d="M92 252 q12 -7 26 0 t28 0 t28 1 t24 1"/>
+    <path d="M92 280 q14 -5 26 0 t30 0 t26 0"/>
+    <path d="M92 308 q12 -6 28 0 t26 1 t30 0 t22 1"/>
+    <path d="M92 336 q14 -6 26 0 t28 0 t24 1"/>
+  </g>
+  <!-- An emphasised name line -->
+  <path d="M92 366 q10 -8 22 -3 q10 -10 22 -2 q12 -8 22 0 q12 -6 24 0" stroke="#7A2E2E" stroke-width="3" fill="none" opacity="0.8"/>
+
+  <!-- Handwriting — right page -->
+  <g stroke="#6B4E2E" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0.6">
+    <path d="M344 164 q14 -7 28 0 t28 0 t28 0 t26 2"/>
+    <path d="M344 192 q12 -6 24 -1 t30 1 t24 -2 t30 2"/>
+    <path d="M344 220 q16 -6 30 0 t26 1 t30 -1"/>
+    <path d="M344 248 q12 -7 26 0 t28 0 t28 1"/>
+    <path d="M344 276 q14 -5 26 0 t30 0 t26 0"/>
+    <path d="M344 304 q12 -6 28 0 t26 1 t30 0"/>
+    <path d="M344 332 q14 -6 26 0 t28 0 t24 1"/>
+    <path d="M344 360 q12 -6 24 0 t28 0 t26 1"/>
+  </g>
+
+  <!-- Wax seal on right page -->
+  <g transform="translate(516 326)">
+    <circle r="30" fill="#9A3A23"/>
+    <circle r="30" fill="#C0492C" opacity="0.5"/>
+    <circle r="22" fill="none" stroke="#7A2E2E" stroke-width="2"/>
+    <path d="M0 -14 L4 -4 L15 -4 L6 3 L9 14 L0 7 L-9 14 L-6 3 L-15 -4 L-4 -4 Z" fill="#7A2E2E"/>
+  </g>
+
+  <!-- Ribbon bookmark -->
+  <path d="M392 120 L392 250 L406 232 L420 250 L420 120 Z" fill="#C9A24B"/>
+  <path d="M392 120 L420 120 L420 130 L392 130 Z" fill="#E2C886"/>
+</svg>

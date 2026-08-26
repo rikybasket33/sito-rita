@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (function(){
+      function apply(){
+        try{
+          if(localStorage.getItem("rr_theme")==="dark"){
+            document.documentElement.setAttribute("data-theme","dark");
+          }else{
+            document.documentElement.removeAttribute("data-theme");
+          }
+        }catch(e){}
+      }
+      apply();
+      window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+    })();
+  </script>
+  <title>Request a Quote — Italian Heritage Journey</title>
+  <meta name="description" content="Build your personalised quote in five minutes. Choose your package, your add-ons, and tell us a little about your family." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Request a Quote — Italian Heritage Journey" />
+  <meta property="og:description" content="Build your personalised quote in five minutes. Choose your package, your add-ons, and tell us a little about your family." />
+  <meta property="og:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Request a Quote — Italian Heritage Journey" />
+  <meta name="twitter:description" content="Build your personalised quote in five minutes. Choose your package, your add-ons, and tell us a little about your family." />
+  <meta name="twitter:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <style>
+    /* Page-local: result banner + small invalid-field cue */
+    .result {
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-m);
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+    .result--ok  { background: rgba(110, 127, 79, 0.12); color: var(--c-olive-deep); border: 1px solid var(--c-olive); }
+    .result--err { background: rgba(192, 73, 44, 0.10);  color: var(--c-terracotta-deep); border: 1px solid var(--c-terracotta); }
+    .field--error input, .field--error select, .field--error textarea {
+      border-color: var(--c-terracotta) !important;
+      background: #FFF6F1 !important;
+    }
+    .field--error .choice, .field--error .addon {
+      border-color: var(--c-terracotta) !important;
+    }
+    .form-step h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+    .form-step .step-hint {
+      color: var(--c-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.4rem;
+    }
+    /* Honeypot: bots fill it, humans never see it.
+       Don't use display:none — some bots skip those fields. */
+    .hp-field {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">R</span>
+        <span>
+          <span class="brand__name" data-biz="name">Rita Roncassaglia</span>
+          <span class="brand__tagline" data-biz="tagline">Italian Ancestry & Heritage Journeys</span>
+        </span>
+      </a>
+      <nav class="nav__group">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The Experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="quote.html"><span>Request a quote</span> <span class="arrow">→</span></a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <!-- ===================== HEADER ===================== -->
+    <section class="section section--tight section--cream-deep">
+      <div class="container container--narrow" style="text-align:center;">
+        <span class="eyebrow eyebrow--center reveal">Request a quote</span>
+        <h1 class="reveal">Build your journey.</h1>
+        <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">
+          Five short steps. We'll write you a personalised quote within 48 hours — no obligation.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== WHAT'S INCLUDED (breve) ===================== -->
+    <section class="section section--tight section--cream">
+      <div class="container container--narrow">
+        <div class="reveal" style="border: 1px solid var(--c-line); border-radius: var(--radius-l); padding: 1.6rem 1.8rem; background: var(--c-ivory);">
+          <h2 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Before you start: what you are quoting</h2>
+          <p style="color: var(--c-ink-soft); margin-bottom: 0.6rem;">
+            The quote covers <strong>Rita's work only</strong> — the archive research, the documents,
+            the contact with your relatives, and her being beside you to translate. Her fee depends on
+            how much research your family needs, which is why there is no price list.
+          </p>
+          <p style="color: var(--c-ink-soft); margin-bottom: 0;">
+            Flights, hotels, restaurants, car hire and experiences are <strong>not</strong> included:
+            you book and pay for them directly. Rita is glad to send you the links, but she does not
+            book on your behalf and <strong>takes no commission</strong> from anyone she recommends.
+            Travel and archive fees for the research are reimbursed at cost, with receipts.
+            <a href="services.html#included">More on what's included &rarr;</a>
+          </p>
+          <p style="color: var(--c-ink-soft); margin-top: 0.6rem; margin-bottom: 0;">
+            If you would like Rita to drive your rental car, she goes on the rental agreement as a
+            <strong>named additional driver</strong> — otherwise the rental company's insurance would not
+            cover a claim. It is a standard box on the contract and we sort it out before you land.
+            <a href="services.html#driving">How the car works &rarr;</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONFIGURATOR ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="configurator">
+
+          <!-- ----- FORM ----- -->
+          <form id="quote-form" class="configurator__form reveal" novalidate>
+
+            <!-- Honeypot field — invisible to humans, irresistible to bots.
+                 If filled, the submission is silently dropped. Do NOT remove. -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="hp-website">Website (leave empty)</label>
+              <input type="text" id="hp-website" name="_website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Progress -->
+            <div class="steps-bar">
+              <div class="steps-bar__dot is-active"></div>
+              <div class="steps-bar__dot"></div>
+              <div class="steps-bar__dot"></div>
+              <div class="steps-bar__dot"></div>
+              <div class="steps-bar__dot"></div>
+            </div>
+
+            <!-- STEP 1: Package -->
+            <div class="form-step is-active">
+              <h2>1. Which package fits your family?</h2>
+              <p class="step-hint">Don't worry — you can always switch in the conversation that follows.</p>
+
+              <div class="choice-grid">
+                <label class="choice">
+                  <input type="radio" name="package" value="research" data-required>
+                  <span class="choice__bullet"></span>
+                  <span class="choice__label">Research Package</span>
+                  <span class="choice__desc">Rita works the Italian archives on her own. You stay home and receive the written report.</span>
+                </label>
+
+                <label class="choice">
+                  <input type="radio" name="package" value="journey" data-required>
+                  <span class="choice__bullet"></span>
+                  <span class="choice__label">Full Heritage Journey</span>
+                  <span class="choice__desc">Everything in the Research Package — and you can join Rita in the research — plus Rita beside you in Italy as your personal assistant.</span>
+                </label>
+
+                <label class="choice" style="grid-column: 1 / -1;">
+                  <input type="radio" name="package" value="tree_help">
+                  <span class="choice__bullet"></span>
+                  <span class="choice__label">I don't have a family tree yet</span>
+                  <span class="choice__desc">We can suggest you to start one on FamilySearch.org, which is free, before you decide the rest.</span>
+                </label>
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn--ghost" data-action="prev">← Previous</button>
+                <button type="button" class="btn btn--primary" data-action="next">Continue <span class="arrow">→</span></button>
+              </div>
+            </div>
+
+            <!-- STEP 2: Add-ons -->
+            <div class="form-step">
+              <h2>2. Pick your optional add-ons.</h2>
+              <p class="step-hint">Skip any you're unsure about — you can ask Rita about them later.</p>
+
+              <div class="addon-grid">
+                <label class="addon">
+                  <input type="checkbox" name="addons" value="assistant">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">Rita as personal assistant</span><span class="addon__hint">Throughout the stay</span></span>
+                </label>
+                <label class="addon">
+                  <input type="checkbox" name="addons" value="driving">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">Rita drives the rental car</span><span class="addon__hint">Fuel at cost — she goes on the rental agreement as a named driver</span></span>
+                </label>
+                <label class="addon">
+                  <input type="checkbox" name="addons" value="gastronomy">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">Food &amp; wine suggestions</span><span class="addon__hint">Anywhere in Italy — you book directly</span></span>
+                </label>
+                <label class="addon">
+                  <input type="checkbox" name="addons" value="villages">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">Visit to ancestral villages</span><span class="addon__hint">With Rita alongside you to translate</span></span>
+                </label>
+                <label class="addon">
+                  <input type="checkbox" name="addons" value="document_help">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">Certified documents</span><span class="addon__hint">Certified copies of the records we find</span></span>
+                </label>
+                <label class="addon">
+                  <input type="checkbox" name="addons" value="interpreter">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">Live translation</span><span class="addon__hint">During family meetings</span></span>
+                </label>
+                <label class="addon">
+                  <input type="checkbox" name="addons" value="archive_research">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">Deep archive research</span><span class="addon__hint">State archives, military rolls, notarial deeds</span></span>
+                </label>
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn--ghost" data-action="prev">← Previous</button>
+                <button type="button" class="btn btn--primary" data-action="next">Continue <span class="arrow">→</span></button>
+              </div>
+            </div>
+
+            <!-- STEP 3: Family info -->
+            <div class="form-step">
+              <h2>3. Tell us about your family.</h2>
+              <p class="step-hint">A little context goes a long way toward an accurate quote.</p>
+
+              <div class="field">
+                <label for="has_tree">Do you already have a family tree?</label>
+                <select id="has_tree" name="has_tree" data-required>
+                  <option value="">— Please choose —</option>
+                  <option value="Yes, complete">Yes, fairly complete</option>
+                  <option value="Yes, partial">Yes, partial — some gaps</option>
+                  <option value="No, not yet">No — not yet, I'd like to start one</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="ancestors">Known Italian ancestors / surnames / villages</label>
+                <span class="hint">Even a single great-grandparent's name and a guess at the town is enough to start.</span>
+                <textarea id="ancestors" name="ancestors" placeholder="e.g. Giovanni Bianchi, born somewhere near Modena around 1880; mother's side from Lucca province"></textarea>
+              </div>
+
+              <div class="field">
+                <label for="contact_living">Would you like to meet living relatives if we find them?</label>
+                <select id="contact_living" name="contact_living">
+                  <option value="">— Please choose —</option>
+                  <option value="Yes, absolutely">Yes, absolutely</option>
+                  <option value="Yes, if they want to meet">Yes, but only if they want to meet</option>
+                  <option value="Maybe, depending on the situation">Maybe — depending on the situation</option>
+                  <option value="No, just records">No, I just want the records</option>
+                </select>
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn--ghost" data-action="prev">← Previous</button>
+                <button type="button" class="btn btn--primary" data-action="next">Continue <span class="arrow">→</span></button>
+              </div>
+            </div>
+
+            <!-- STEP 4: Trip details -->
+            <div class="form-step">
+              <h2>4. Trip preferences (if you're coming).</h2>
+              <p class="step-hint">Leave blank anything that doesn't apply — for example if you're only requesting research.</p>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="travelers">Number of travelers</label>
+                  <input type="text" id="travelers" name="travelers" placeholder="e.g. 2 adults">
+                </div>
+                <div class="field">
+                  <label for="duration">Trip length</label>
+                  <input type="text" id="duration" name="duration" placeholder="e.g. 7 days">
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="timeframe">Preferred timing</label>
+                  <input type="text" id="timeframe" name="timeframe" placeholder="e.g. Spring 2026, or flexible">
+                </div>
+                <div class="field">
+                  <label for="transport">Transport</label>
+                  <span class="hint">If Rita drives, she is added to your rental agreement as a named driver — <a href="services.html#driving">why that matters</a>.</span>
+                  <select id="transport" name="transport">
+                    <option value="">— Please choose —</option>
+                    <option value="Rita drives our rental">Rita drives our rental car</option>
+                    <option value="We drive">We'll drive ourselves</option>
+                    <option value="Mix">Mix — depending on the day</option>
+                    <option value="Not sure">Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="regions">Italian regions of interest</label>
+                <span class="hint">Where your ancestors come from, plus anywhere else you'd love to see.</span>
+                <input type="text" id="regions" name="regions" placeholder="e.g. Emilia-Romagna, Tuscany, Sicily">
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn--ghost" data-action="prev">← Previous</button>
+                <button type="button" class="btn btn--primary" data-action="next">Continue <span class="arrow">→</span></button>
+              </div>
+            </div>
+
+            <!-- STEP 5: Contact -->
+            <div class="form-step">
+              <h2>5. How can we reach you?</h2>
+              <p class="step-hint">We'll reply within 48 hours with your personalised quote.</p>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="first_name">First name</label>
+                  <input type="text" id="first_name" name="first_name" data-required>
+                </div>
+                <div class="field">
+                  <label for="last_name">Last name</label>
+                  <input type="text" id="last_name" name="last_name" data-required>
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" data-required>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone <span style="color: var(--c-muted); font-weight: normal;">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="United States" value="United States" data-required>
+              </div>
+
+              <div class="field">
+                <label for="notes">Anything else we should know?</label>
+                <textarea id="notes" name="notes" placeholder="Stories, dates, a photo description, anything that might help..."></textarea>
+              </div>
+
+              <div id="quote-result" aria-live="polite"></div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn--ghost" data-action="prev">← Previous</button>
+                <button type="submit" class="btn btn--primary" data-action="send">Send my request <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </form>
+
+          <!-- ----- LIVE SUMMARY ----- -->
+          <aside class="configurator__summary reveal" data-delay="100">
+            <span class="eyebrow" style="color: var(--c-gold-soft);">Your selection</span>
+            <h3 style="margin-top: 0.4rem;">Live summary</h3>
+            <ul id="summary-list" class="summary-list"></ul>
+            <p id="summary-empty" class="empty">As you fill in the form, your selections will appear here.</p>
+            <div style="border-top: 1px solid rgba(246,239,227,0.18); padding-top: 1rem; margin-top: 1rem; font-size: 0.85rem; color: rgba(246,239,227,0.7);">
+              <strong style="color: var(--c-gold-soft);">No prices on this site by choice.</strong>
+              Every quote is written by hand — based on your tree, your villages and your add-ons — so it reflects what you actually need.
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 data-biz="name">Rita Roncassaglia</h4>
+          <p>Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.</p>
+        </div>
+        <div><h4>Explore</h4><ul>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+        </ul></div>
+        <div><h4>Start</h4><ul>
+          <li><a href="quote.html">Request a quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#tree">Start my family tree</a></li>
+        </ul></div>
+        <div><h4>Reach us</h4><ul>
+          <li><a href="#" data-biz="email">info@example.com</a></li>
+          <li><span data-biz="location">Emilia-Romagna, Italy</span></li>
+        </ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-biz="year">2026</span> Rita Roncassaglia. <span>All rights reserved.</span></span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
+        <span>Made with care between Italy and the United States.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/configurator.js"></script>
+  <script src="assets/js/quote-send.js"></script>
+  <script>
+    // Honor ?package=research|journey from URL on page load
+    (function() {
+      const params = new URLSearchParams(location.search);
+      const pre = params.get("package");
+      if (!pre) return;
+      const radio = document.querySelector(`input[name="package"][value="${pre}"]`);
+      if (radio) {
+        radio.checked = true;
+        radio.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+    })();
+  </script>
+</body>
+</html>

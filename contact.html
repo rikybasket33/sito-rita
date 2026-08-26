@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (function(){
+      function apply(){
+        try{
+          if(localStorage.getItem("rr_theme")==="dark"){
+            document.documentElement.setAttribute("data-theme","dark");
+          }else{
+            document.documentElement.removeAttribute("data-theme");
+          }
+        }catch(e){}
+      }
+      apply();
+      window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+    })();
+  </script>
+  <title>Contact — Rita Roncassaglia</title>
+  <meta name="description" content="Get in touch with Rita Roncassaglia by email. Special pathway for visitors who still need to build a family tree." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Rita Roncassaglia" />
+  <meta property="og:description" content="Get in touch with Rita Roncassaglia by email. Special pathway for visitors who still need to build a family tree." />
+  <meta property="og:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Rita Roncassaglia" />
+  <meta name="twitter:description" content="Get in touch with Rita Roncassaglia by email. Special pathway for visitors who still need to build a family tree." />
+  <meta name="twitter:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .contact-card {
+      background: var(--c-ivory);
+      border: 1px solid var(--c-line);
+      border-radius: var(--radius-l);
+      padding: 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease);
+    }
+    /* i tre inviti all'azione restano sulla stessa riga anche se il testo sopra
+       e' piu' corto o piu' lungo */
+    .contact-card a { margin-top: auto; }
+    .contact-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-m); }
+    .contact-card svg { color: var(--c-terracotta); margin-bottom: 1rem; }
+    .contact-card h3 { font-size: 1.2rem; margin-bottom: 0.4rem; }
+    .contact-card a { font-weight: 600; font-size: 1.05rem; padding-top: 0.6rem; }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">R</span>
+        <span>
+          <span class="brand__name" data-biz="name">Rita Roncassaglia</span>
+          <span class="brand__tagline" data-biz="tagline">Italian Ancestry & Heritage Journeys</span>
+        </span>
+      </a>
+      <nav class="nav__group">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The Experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="quote.html"><span>Request a quote</span> <span class="arrow">→</span></a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <!-- ===================== HEADER ===================== -->
+    <section class="section section--cream-deep">
+      <div class="container container--narrow" style="text-align:center;">
+        <span class="eyebrow eyebrow--center reveal">Contact</span>
+        <h1 class="reveal">Let's start a conversation.</h1>
+        <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">
+          Quotes go through the <a href="quote.html">configurator</a>. General questions?
+          Email is the best way to reach Rita. We reply in English.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT METHODS ===================== -->
+    <section class="section" id="contact-methods">
+      <div class="container container--narrow">
+        <div class="contact-grid">
+
+          <div class="contact-card reveal">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/>
+            </svg>
+            <h3>Email</h3>
+            <p style="color: var(--c-muted); margin-bottom: 0.6rem;">Best for sharing your tree as a file.</p>
+            <a href="#" data-biz="email">info@example.com</a>
+          </div>
+
+          <div class="contact-card reveal" data-delay="80">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h12l4 4v12H4z"/><path d="M16 4v4h4"/><path d="M8 12h8M8 16h6"/>
+            </svg>
+            <h3>A quote</h3>
+            <p style="color: var(--c-muted); margin-bottom: 0.6rem;">Five steps, and a written quote within 48 hours.</p>
+            <a href="quote.html">Open the configurator</a>
+          </div>
+
+        </div>
+
+        <p style="text-align:center; margin-top: 3rem; color: var(--c-ink-soft); font-style: italic;" class="reveal">
+          Rita reads every email personally. Please give her up to 48 hours to respond — she may well be inside an archive without signal.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== TREE-BUILDING PATHWAY ===================== -->
+    <section class="section section--cream" id="tree">
+      <div class="container">
+        <div class="profile">
+          <div class="profile__body reveal reveal--left">
+            <span class="eyebrow">Special pathway</span>
+            <h2>I don't have a family tree yet — can you help?</h2>
+            <p>
+              We strongly suggest you arrive with a family tree already built. The research is faster, deeper and less expensive
+              when we start from a clear starting point.
+            </p>
+            <p>
+              That said: if you haven't built one yet, we can suggest you to start one on
+              <a href="https://www.familysearch.org" target="_blank" rel="noopener">FamilySearch.org</a>, which is free
+              and is where most families begin. Tell us the names, towns and dates you already have, and we will point
+              you to where the American side of the search starts — passenger manifests, naturalisation records,
+              census data, and the memories of the older people in your family.
+            </p>
+            <p>
+              Once your tree is established on the American side, we take over on the Italian side.
+              Tell us what you have and what you need.
+            </p>
+            <p style="margin-top: 1.5rem;">
+              <a href="mailto:?subject=Help me start my family tree" data-biz-email-href class="btn btn--primary">Email Rita about your tree <span class="arrow">→</span></a>
+            </p>
+          </div>
+          <div class="profile__media reveal reveal--right" style="background: linear-gradient(160deg, var(--c-olive) 0%, var(--c-olive-deep) 100%);">
+            <div class="frame-ornament"></div>
+            <object class="ornament" style="position:absolute; top:14px; left:14px; width:48px; color: var(--c-gold-soft);" data="assets/img/italy-map.svg" type="image/svg+xml" aria-hidden="true"></object>
+            <div style="position:absolute; inset:0; display:grid; place-items:center; color: rgba(246,239,227,0.92); font-family: var(--f-display); font-size: 1.5rem; padding: 2rem; text-align:center;">
+              <span><em>"Le radici si possono ricostruire."</em><br><span style="font-size: 0.85rem; font-style: normal; opacity: 0.8;">Roots can be rebuilt.</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-strip">
+      <div class="container">
+        <h2 class="reveal">Or just go straight to a quote.</h2>
+        <p class="reveal">If you already know what you want, the configurator takes about five minutes.</p>
+        <a href="quote.html" class="btn btn--gold reveal">Open the configurator <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 data-biz="name">Rita Roncassaglia</h4>
+          <p>Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.</p>
+        </div>
+        <div><h4>Explore</h4><ul>
+          <li><a href="about.html">About Rita</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="experience.html">The experience</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+        </ul></div>
+        <div><h4>Start</h4><ul>
+          <li><a href="quote.html">Request a quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#tree">Start my family tree</a></li>
+        </ul></div>
+        <div><h4>Reach us</h4><ul>
+          <li><a href="#" data-biz="email">info@example.com</a></li>
+          <li><span data-biz="location">Emilia-Romagna, Italy</span></li>
+        </ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-biz="year">2026</span> Rita Roncassaglia. <span>All rights reserved.</span></span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
+        <span>Made with care between Italy and the United States.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

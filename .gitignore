@@ -1,0 +1,14 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Working notes and source photographs — not part of the published site.
+# docs/  contains the working plan and the client's personal details.
+# images/ contains the original, full-size photographs.
+docs/
+images/
+
+# Scratch & backups
+zz_*
+*.zip

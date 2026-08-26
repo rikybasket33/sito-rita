@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rikybasket33.github.io/sito-rita/sitemap.xml
