@@ -71,7 +71,8 @@
 
     if (!ok && firstInvalid) {
       firstInvalid.focus();
-      window.showToast && window.showToast("Please complete the highlighted fields.");
+      const msg = "Please complete the highlighted fields.";
+      window.showToast && window.showToast(window.i18nT ? window.i18nT(msg) : msg);
     }
     return ok;
   }
@@ -116,13 +117,55 @@
   };
   const addonLabel = {
     assistant: "Rita as personal assistant during the stay",
-    driving: "Rita drives the rental car (to be added to the rental agreement as a named driver)",
-    gastronomy: "Food & wine suggestions (anywhere in Italy, client books directly)",
+    driving: "Rita drives the rental car (named on the rental agreement, as main driver or alongside the client)",
+    gastronomy: "Food & wine experiences (anywhere in Italy)",
     villages: "Visit to ancestral villages, with Rita alongside to translate",
-    document_help: "Certified copies of the records we find",
+    village_shots: "Rita's own photographs of the ancestral village (she travels there to take them)",
+    document_help: "Copies of the certified records we find",
     interpreter: "Translation during family meetings",
     archive_research: "Deep archive research (state, military, notarial)"
   };
+
+  /* ---------- Add-ons: i piu' pertinenti in cima per il Research Package ---------- */
+  // Con il solo Research Package Rita non viaggia con la famiglia: le voci che
+  // hanno davvero senso sono i documenti, l'archivio e le sue fotografie del borgo.
+  const RESEARCH_RELEVANT = ["document_help", "archive_research", "village_shots"];
+  const addonGrid = form.querySelector(".addon-grid");
+  const relevantNote = document.getElementById("addons-relevant-note");
+  const addonTiles = addonGrid ? Array.from(addonGrid.querySelectorAll(".addon")) : [];
+
+  function updateRelevantAddons() {
+    if (!addonGrid || !addonTiles.length) return;
+    const pkg = form.querySelector("[name='package']:checked");
+    const isResearch = pkg && pkg.value === "research";
+
+    if (isResearch) {
+      const rank = t => {
+        const input = t.querySelector("input[name='addons']");
+        const i = input ? RESEARCH_RELEVANT.indexOf(input.value) : -1;
+        return i === -1 ? RESEARCH_RELEVANT.length : i;
+      };
+      addonTiles
+        .slice()
+        .sort((a, b) => rank(a) - rank(b))
+        .forEach(t => {
+          t.classList.toggle("addon--relevant", rank(t) < RESEARCH_RELEVANT.length);
+          addonGrid.appendChild(t);
+        });
+    } else {
+      // Ordine originale della pagina
+      addonTiles.forEach(t => {
+        t.classList.remove("addon--relevant");
+        addonGrid.appendChild(t);
+      });
+    }
+
+    if (relevantNote) relevantNote.hidden = !isResearch;
+  }
+
+  form.addEventListener("change", (e) => {
+    if (e.target && e.target.name === "package") updateRelevantAddons();
+  });
 
   function readForm() {
     const data = {};
@@ -178,12 +221,13 @@
     }
     summaryEmpty.style.display = "none";
 
+    const T = (s) => (window.i18nT ? window.i18nT(s) : s);
     items.forEach(({ lbl, val }) => {
       const li = document.createElement("li");
       const a = document.createElement("span");
-      a.className = "lbl"; a.textContent = lbl;
+      a.className = "lbl"; a.textContent = T(lbl);
       const b = document.createElement("span");
-      b.className = "val"; b.textContent = val;
+      b.className = "val"; b.textContent = String(val).split(", ").map(T).join(", ");
       li.appendChild(a); li.appendChild(b);
       summaryRoot.appendChild(li);
     });
@@ -191,6 +235,7 @@
 
   form.addEventListener("input", renderSummary);
   form.addEventListener("change", renderSummary);
+  document.addEventListener("languagechange", renderSummary);
 
   // Build the addon labels lookup as a global so quote-send.js can mirror them.
   window.QUOTE_LABELS = { package: {
@@ -223,6 +268,15 @@
   });
 
   /* ---------- Init ---------- */
+  // I link "Request a research quote" / "Build my journey" arrivano con
+  // ?package=..., cosi' la scelta e' gia' fatta quando la pagina si apre.
+  const PACKAGES = ["research", "journey", "tree_help"];
+  const preset = new URLSearchParams(window.location.search).get("package");
+  if (PACKAGES.indexOf(preset) !== -1) {
+    const presetInput = form.querySelector("[name='package'][value='" + preset + "']");
+    if (presetInput) presetInput.checked = true;
+  }
+  updateRelevantAddons();
   showStep(0);
   renderSummary();
 })();

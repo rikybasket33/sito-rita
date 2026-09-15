@@ -13,15 +13,23 @@ window.SITE_CONFIG = {
 
   /* ---------- Informazioni business mostrate nel sito ---------- */
   business: {
-    name: "Rita Roncassaglia",
+    name: "Italian Roots with Rita",
     tagline: "Italian Ancestry & Heritage Journeys",
+    /* Payoff mostrato accanto al nome quando il sito e' in italiano. */
+    taglineIt: "Ricerca genealogica e viaggi nelle radici",
     baseLocation: "Emilia-Romagna, Italy",
+    baseLocationIt: "Emilia-Romagna, Italia",
     serviceArea: "All of Italy",
     /* Rita ha chiesto di NON pubblicare il telefono: lasciare vuoti.
        Se restano vuoti, main.js non popola nessun elemento data-biz="phone". */
     phone: "",
     whatsapp: "",
     publicEmail: "rita.mail@esempio.com",   // mostrata nella pagina contatti
+    /* Profilo Instagram. Appena la pagina e' online incolla qui l'indirizzo
+       completo (es. "https://www.instagram.com/nomeprofilo/"): il link nel
+       footer di tutte le pagine si aggiorna da solo. Finche' resta vuoto,
+       l'icona rimanda alla home di Instagram. */
+    instagramUrl: "",
     instagram: "",
     facebook: "Rita Roncassaglia"
   },

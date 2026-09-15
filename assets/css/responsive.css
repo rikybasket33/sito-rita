@@ -143,6 +143,8 @@ h1, h2, h3, h4 { overflow-wrap: break-word; word-wrap: break-word; }
 
   /* Theme toggle compact */
   .theme-toggle { --size: 38px; margin-left: 0; }
+  .lang-switch { height: 38px; margin-left: 0.35rem; }
+  .lang-switch__btn { font-size: 0.68rem; padding: 0 0.5rem; }
 
   /* Push content below smaller nav */
   .page { padding-top: 68px; }
@@ -329,6 +331,7 @@ h1, h2, h3, h4 { overflow-wrap: break-word; word-wrap: break-word; }
   .btn { min-height: 48px; }
   .nav__links a { padding: 0.6rem 0.2rem; }
   .theme-toggle { --size: 44px; }
+  .lang-switch { height: 44px; }
   .addon, .choice { min-height: 56px; }
   .field input,
   .field select,
@@ -351,6 +354,8 @@ h1, h2, h3, h4 { overflow-wrap: break-word; word-wrap: break-word; }
   .nav__cta { margin-left: 0.25rem; }
   .nav__cta .btn { padding: 0.6rem 1rem; font-size: 0.85rem; }
   .theme-toggle { --size: 36px; }
+  .lang-switch { height: 36px; margin-left: 0.25rem; }
+  .lang-switch__btn { font-size: 0.65rem; padding: 0 0.42rem; }
 }
 
 /* =============================================================
@@ -504,7 +509,7 @@ h1, h2, h3, h4 { overflow-wrap: break-word; word-wrap: break-word; }
    PRINT — clean printable quote / about page
    ============================================================= */
 @media print {
-  .nav, .footer, .cta-strip, .scroll-cue, .theme-toggle, .nav__toggle { display: none !important; }
+  .nav, .footer, .cta-strip, .scroll-cue, .theme-toggle, .lang-switch, .nav__toggle { display: none !important; }
   .page { padding-top: 0; }
   body { background: #fff !important; color: #000 !important; }
   .section { padding: 1.5rem 0; }

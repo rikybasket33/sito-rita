@@ -84,7 +84,7 @@
       <a href="index.html" class="brand">
         <span class="brand__mark">R</span>
         <span>
-          <span class="brand__name" data-biz="name">Rita Roncassaglia</span>
+          <span class="brand__name" data-biz="name">Italian Roots with Rita</span>
           <span class="brand__tagline" data-biz="tagline">Italian Ancestry & Heritage Journeys</span>
         </span>
       </a>
@@ -98,6 +98,10 @@
           <li><a href="contact.html">Contact</a></li>
           <li class="nav__cta"><a class="btn btn--primary" href="quote.html"><span>Request a quote</span> <span class="arrow">→</span></a></li>
         </ul>
+        <div class="lang-switch" role="group" aria-label="Language / Lingua">
+          <button class="lang-switch__btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-switch__btn" type="button" data-lang="it" aria-pressed="false">IT</button>
+        </div>
         <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
@@ -138,16 +142,17 @@
             how much research your family needs, which is why there is no price list.
           </p>
           <p style="color: var(--c-ink-soft); margin-bottom: 0;">
-            Flights, hotels, restaurants, car hire and experiences are <strong>not</strong> included:
-            you book and pay for them directly. Rita is glad to send you the links, but she does not
-            book on your behalf and <strong>takes no commission</strong> from anyone she recommends.
-            Travel and archive fees for the research are reimbursed at cost, with receipts.
+            Flights, hotels, restaurants, car hire and experiences are <strong>not</strong> part of the
+            fee: they are arranged separately and stay in your name. Rita is glad to point you towards
+            what is worth your time, and she <strong>takes no commission</strong> from anyone she
+            recommends. Travel and archive fees for the research are reimbursed at cost, with receipts.
             <a href="services.html#included">More on what's included &rarr;</a>
           </p>
           <p style="color: var(--c-ink-soft); margin-top: 0.6rem; margin-bottom: 0;">
             If you would like Rita to drive your rental car, she goes on the rental agreement as a
-            <strong>named additional driver</strong> — otherwise the rental company's insurance would not
-            cover a claim. It is a standard box on the contract and we sort it out before you land.
+            <strong>named driver</strong> — as the main driver, or alongside you, whichever suits the way you
+            book. Without that, the rental company's insurance would not cover a claim. It is a standard box
+            on the contract and we sort it out before you land.
             <a href="services.html#driving">How the car works &rarr;</a>
           </p>
         </div>
@@ -216,6 +221,7 @@
             <div class="form-step">
               <h2>2. Pick your optional add-ons.</h2>
               <p class="step-hint">Skip any you're unsure about — you can ask Rita about them later.</p>
+              <p class="step-hint addons-note" id="addons-relevant-note" hidden>Marked <strong>Most relevant</strong>: the add-ons that fit the Research Package best. They are shown first.</p>
 
               <div class="addon-grid">
                 <label class="addon">
@@ -226,12 +232,12 @@
                 <label class="addon">
                   <input type="checkbox" name="addons" value="driving">
                   <span class="addon__box"></span>
-                  <span><span class="addon__name">Rita drives the rental car</span><span class="addon__hint">Fuel at cost — she goes on the rental agreement as a named driver</span></span>
+                  <span><span class="addon__name">Rita drives the rental car</span><span class="addon__hint">Fuel at cost — named on the rental agreement, as main driver or alongside you</span></span>
                 </label>
                 <label class="addon">
                   <input type="checkbox" name="addons" value="gastronomy">
                   <span class="addon__box"></span>
-                  <span><span class="addon__name">Food &amp; wine suggestions</span><span class="addon__hint">Anywhere in Italy — you book directly</span></span>
+                  <span><span class="addon__name">Food &amp; wine experiences</span><span class="addon__hint">Anywhere in Italy, at your own pace</span></span>
                 </label>
                 <label class="addon">
                   <input type="checkbox" name="addons" value="villages">
@@ -239,9 +245,14 @@
                   <span><span class="addon__name">Visit to ancestral villages</span><span class="addon__hint">With Rita alongside you to translate</span></span>
                 </label>
                 <label class="addon">
+                  <input type="checkbox" name="addons" value="village_shots">
+                  <span class="addon__box"></span>
+                  <span><span class="addon__name">My shots of your ancestral village</span><span class="addon__hint">Rita travels to the village herself and photographs it for you — the house, the street, the church, the cemetery</span></span>
+                </label>
+                <label class="addon">
                   <input type="checkbox" name="addons" value="document_help">
                   <span class="addon__box"></span>
-                  <span><span class="addon__name">Certified documents</span><span class="addon__hint">Certified copies of the records we find</span></span>
+                  <span><span class="addon__name">Copies of certified documents</span><span class="addon__hint">Copies of the certified records we find for your family</span></span>
                 </label>
                 <label class="addon">
                   <input type="checkbox" name="addons" value="interpreter">
@@ -322,7 +333,7 @@
                 </div>
                 <div class="field">
                   <label for="transport">Transport</label>
-                  <span class="hint">If Rita drives, she is added to your rental agreement as a named driver — <a href="services.html#driving">why that matters</a>.</span>
+                  <span class="hint">If Rita drives, she goes on your rental agreement as a named driver — as the main driver, or alongside you. <a href="services.html#driving">Why that matters</a>.</span>
                   <select id="transport" name="transport">
                     <option value="">— Please choose —</option>
                     <option value="Rita drives our rental">Rita drives our rental car</option>
@@ -413,7 +424,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <h4 data-biz="name">Rita Roncassaglia</h4>
+          <h4 data-biz="name">Italian Roots with Rita</h4>
           <p>Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.</p>
         </div>
         <div><h4>Explore</h4><ul>
@@ -430,10 +441,11 @@
         <div><h4>Reach us</h4><ul>
           <li><a href="#" data-biz="email">info@example.com</a></li>
           <li><span data-biz="location">Emilia-Romagna, Italy</span></li>
+          <li><a class="footer__ig" data-biz="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener me" aria-label="Italian Roots with Rita on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg><span>Italian Roots with Rita</span></a></li>
         </ul></div>
       </div>
       <div class="footer__bottom">
-        <span>© <span data-biz="year">2026</span> Rita Roncassaglia. <span>All rights reserved.</span></span>
+        <span>© <span data-biz="year">2026</span> Italian Roots with Rita. <span>All rights reserved.</span></span>
         <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
         <span>Made with care between Italy and the United States.</span>
       </div>
@@ -442,6 +454,8 @@
 
   <script src="assets/js/config.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n-it.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/configurator.js"></script>
   <script src="assets/js/quote-send.js"></script>
   <script>

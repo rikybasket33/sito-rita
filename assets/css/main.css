@@ -223,6 +223,11 @@ a:hover { color: var(--c-terracotta); }
 }
 .btn--gold:hover { background: var(--c-gold-soft); }
 
+.btn--wide {
+  width: 100%;
+  justify-content: center;
+}
+
 .btn .arrow {
   display: inline-block;
   transition: transform var(--t-med) var(--ease);
@@ -431,6 +436,9 @@ a:hover { color: var(--c-terracotta); }
   gap: 1rem;
   margin-bottom: 2.5rem;
 }
+/* Un solo pulsante, lungo quanto la colonna del testo */
+.hero__ctas--single { display: block; }
+.hero__ctas--single .btn { max-width: 520px; }
 
 .hero__stats {
   display: flex;
@@ -1020,6 +1028,35 @@ a:hover { color: var(--c-terracotta); }
   border-color: var(--c-terracotta);
   background: var(--c-ivory);
 }
+/* Add-on messi in evidenza (i piu' pertinenti per il pacchetto scelto) */
+.addon--relevant {
+  padding-top: 1.7rem;
+  border-color: var(--c-gold);
+  box-shadow: inset 0 0 0 1px var(--c-gold);
+  background: var(--c-ivory);
+}
+[lang="it"] .addon--relevant::after { content: "Più pertinente"; }
+.addon--relevant::after {
+  content: "Most relevant";
+  position: absolute;
+  top: 0.45rem;
+  right: 0.7rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  background: var(--c-gold-soft);
+  border-radius: 999px;
+  padding: 0.12rem 0.55rem;
+  pointer-events: none;
+}
+.addons-note {
+  border-left: 3px solid var(--c-gold);
+  padding-left: 0.8rem;
+}
+.addons-note[hidden] { display: none; }
+
 .addon__name { font-weight: 600; }
 .addon__hint {
   display: block;
@@ -1119,6 +1156,19 @@ a:hover { color: var(--c-terracotta); }
 }
 .footer a:hover { color: var(--c-gold-soft); }
 .footer ul { list-style: none; padding: 0; margin: 0; }
+/* .footer a imposta display:inline-block: serve piu' specificita' per il flex,
+   altrimenti icona e nome del profilo vanno a capo uno sotto l'altro. */
+.footer a.footer__ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__ig svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  transition: color var(--t-fast) var(--ease);
+}
 .footer__brand p {
   font-family: var(--f-accent);
   font-style: italic;
@@ -1401,6 +1451,45 @@ body { background: var(--c-bg-body); }
 /* =============================================================
    THEME TOGGLE (sun / moon icon in the navbar)
    ============================================================= */
+/* Switch lingua EN / IT, gemello del pulsante tema */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--c-line);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+  height: 40px;
+}
+.lang-switch__btn {
+  font-family: var(--f-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0 0.6rem;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--c-muted);
+  cursor: pointer;
+  transition: background var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+}
+.lang-switch__btn:hover { color: var(--c-terracotta); }
+.lang-switch__btn.is-active {
+  background: var(--c-terracotta);
+  color: var(--c-ivory);
+}
+.lang-switch__btn:focus-visible {
+  outline: 2px solid var(--c-terracotta);
+  outline-offset: -2px;
+}
+[data-theme="dark"] .lang-switch { border-color: var(--c-line); }
+[data-theme="dark"] .lang-switch__btn.is-active {
+  background: var(--c-gold);
+  color: var(--c-ink);
+}
+
 .theme-toggle {
   --size: 40px;
   width: var(--size);

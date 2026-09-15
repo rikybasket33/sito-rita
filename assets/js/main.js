@@ -10,7 +10,9 @@
   function applyBusinessInfo() {
     const b = (window.SITE_CONFIG && window.SITE_CONFIG.business) || {};
     document.querySelectorAll("[data-biz='name']").forEach(el => el.textContent = b.name || el.textContent);
-    document.querySelectorAll("[data-biz='tagline']").forEach(el => el.textContent = b.tagline || el.textContent);
+    const isIt = typeof window.i18nLang === "function" && window.i18nLang() === "it";
+    const tagline = (isIt && b.taglineIt) ? b.taglineIt : b.tagline;
+    document.querySelectorAll("[data-biz='tagline']").forEach(el => el.textContent = tagline || el.textContent);
     document.querySelectorAll("[data-biz='phone']").forEach(el => {
       if (!b.phone) return;
       el.textContent = b.phone;
@@ -28,9 +30,17 @@
       const q = href.includes("?") ? href.slice(href.indexOf("?")) : "";
       el.setAttribute("href", "mailto:" + b.publicEmail + q);
     });
-    document.querySelectorAll("[data-biz='location']").forEach(el => el.textContent = b.baseLocation || el.textContent);
+    document.querySelectorAll("[data-biz='instagram']").forEach(el => {
+      if (!b.instagramUrl) return;
+      el.setAttribute("href", b.instagramUrl);
+    });
+    const loc = (isIt && b.baseLocationIt) ? b.baseLocationIt : b.baseLocation;
+    document.querySelectorAll("[data-biz='location']").forEach(el => el.textContent = loc || el.textContent);
     document.querySelectorAll("[data-biz='year']").forEach(el => el.textContent = new Date().getFullYear());
   }
+  // i18n.js sostituisce l'HTML di alcuni blocchi che contengono elementi
+  // data-biz: dopo ogni cambio lingua li deve poter ripopolare.
+  window.applyBusinessInfo = applyBusinessInfo;
 
   /* ---------- Navigation: scroll state + active link + mobile toggle ---------- */
   function setupNavigation() {
@@ -227,10 +237,8 @@
       }
       document.querySelectorAll(".theme-toggle").forEach(btn => {
         btn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
-        btn.setAttribute(
-          "aria-label",
-          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+        const lbl = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+        btn.setAttribute("aria-label", window.i18nT ? window.i18nT(lbl) : lbl);
       });
     };
 

@@ -254,12 +254,15 @@
     if (!btn) return;
     btn.disabled = !!state;
     btn.dataset.originalText = btn.dataset.originalText || btn.innerHTML;
-    btn.innerHTML = state ? "Sending…" : btn.dataset.originalText;
+    const sending = window.i18nT ? window.i18nT("Sending…") : "Sending…";
+    btn.innerHTML = state ? sending : btn.dataset.originalText;
   }
   function showSuccess(msg) {
     const banner = document.getElementById("quote-result");
+    msg = window.i18nT ? window.i18nT(msg) : msg;
+    const thanks = window.i18nT ? window.i18nT("Thank you!") : "Thank you!";
     if (banner) {
-      banner.innerHTML = `<div class="result result--ok"><strong>Thank you!</strong> ${escapeHtml(msg)}</div>`;
+      banner.innerHTML = `<div class="result result--ok"><strong>${escapeHtml(thanks)}</strong> ${escapeHtml(msg)}</div>`;
       banner.scrollIntoView({ behavior: "smooth", block: "center" });
     } else {
       window.showToast && window.showToast(msg);
@@ -267,6 +270,7 @@
   }
   function showError(msg) {
     const banner = document.getElementById("quote-result");
+    msg = window.i18nT ? window.i18nT(msg) : msg;
     if (banner) {
       banner.innerHTML = `<div class="result result--err">${escapeHtml(msg)}</div>`;
       banner.scrollIntoView({ behavior: "smooth", block: "center" });
