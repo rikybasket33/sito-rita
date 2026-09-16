@@ -393,34 +393,22 @@ window.I18N_IT = {
     "Un viaggio nelle radici richiede tempo — di solito dai due ai sei mesi fra la prima email e la visita vera e propria. Ecco esattamente che cosa succede a ogni passo, così sai che cosa aspettarti.",
   "The moment they realized they shared the same memories.":
     "Il momento in cui hanno capito di condividere gli stessi ricordi.",
-  "You request a quote":
-    "Richiedi un preventivo",
-  "Through our interactive configurator you tell us which package you want, the add-ons you'd like, and a little about your family. Within 48 hours you receive a personalised written quote — no fixed price lists, no surprises.":
-    "Attraverso il configuratore interattivo ci dici quale pacchetto vuoi, gli add-on che desideri e qualcosa della tua famiglia. Entro 48 ore ricevi un preventivo scritto su misura — nessun listino fisso, nessuna sorpresa.",
-  "We have a real conversation":
-    "Facciamo una conversazione vera",
-  "Before any money changes hands, we have a free, no-obligation call (in English). Rita reviews your family tree with you, explains what's likely to be findable and what isn't, and aligns expectations. If we're not the right fit, we'll tell you honestly.":
-    "Prima che passi un solo euro, facciamo una chiamata gratuita e senza impegno. Rita esamina con te il tuo albero genealogico, spiega che cosa è probabile trovare e che cosa no, e allinea le aspettative. Se non siamo la scelta giusta per te, te lo diciamo con onestà.",
+  "Request a quote & talk to Rita":
+    "Richiedi un preventivo e parla con Rita",
+  "Through our interactive configurator you tell us which package you want, the add-ons you'd like, and a little about your family. Within 48 hours you receive an answer by email to arrange a free video call, where Rita reviews your family tree with you, explains what's likely to be findable and what isn't, and aligns expectations. If it's not the right fit, Rita will tell you honestly.":
+    "Attraverso il configuratore interattivo ci dici quale pacchetto vuoi, gli add-on che desideri e qualcosa della tua famiglia. Entro 48 ore ricevi una risposta via email per fissare una videochiamata gratuita, in cui Rita esamina con te il tuo albero genealogico, spiega che cosa è probabile trovare e che cosa no, e allinea le aspettative. Se non è la scelta giusta per te, Rita te lo dirà con onestà.",
   "Atti di nascita, parte prima. Somebody’s beginning, in someone else’s handwriting.":
     "Atti di nascita, parte prima. L&rsquo;inizio di qualcuno, nella calligrafia di qualcun altro.",
-  "Rita verifies your tree":
-    "Rita verifica il tuo albero",
-  "Rita travels to the relevant Italian municipalities and parishes. She reads the original records — often by hand, often in archaic Italian or Latin — and verifies each branch. You receive a structured report with what was confirmed, what wasn't, and why.":
-    "Rita si reca nei comuni e nelle parrocchie italiane interessate. Legge i documenti originali — spesso a mano, spesso in italiano arcaico o in latino — e verifica ogni ramo. Ricevi una relazione strutturata con ciò che è stato confermato, ciò che non lo è stato e perché.",
-  "Living relatives — discreetly":
-    "Parenti viventi — con discrezione",
-  "If Rita finds descendants of your family still living in Italy, she reaches out gently. She explains the situation, shares what you have asked her to share, and waits for them to decide. You are introduced only if they agree. Some families say yes; some prefer privacy. Both answers are respected, always.":
-    "Se Rita trova discendenti della tua famiglia ancora viventi in Italia, li avvicina con delicatezza. Spiega la situazione, condivide ciò che le hai chiesto di condividere e aspetta che siano loro a decidere. <strong>Vieni presentato solo se acconsentono.</strong> Alcune famiglie dicono di sì; altre preferiscono la riservatezza. Entrambe le risposte vengono rispettate, sempre.",
+  "Rita verifies the tree & discreetly contacts living relatives":
+    "Rita verifica l'albero e contatta con discrezione i parenti viventi",
+  "Rita travels to the relevant Italian municipalities and parishes. She reads the original records — often by hand, often in archaic Italian or Latin — and verifies each branch. You receive a structured report with what was confirmed, what wasn't, and why. If you are interested, Rita gets in touch with the descendants of your family in Italy, and you are introduced only if they agree. Some families say yes; some prefer privacy. Both answers are respected, always.":
+    "Rita si reca nei comuni e nelle parrocchie italiane interessate. Legge i documenti originali — spesso a mano, spesso in italiano arcaico o in latino — e verifica ogni ramo. Ricevi una relazione strutturata con ciò che è stato confermato, ciò che non lo è stato e perché. Se lo desideri, Rita si mette in contatto con i discendenti della tua famiglia in Italia, e <strong>vieni presentato solo se acconsentono.</strong> Alcune famiglie dicono di sì; altre preferiscono la riservatezza. Entrambe le risposte vengono rispettate, sempre.",
   "Who your ancestors really are.":
     "Chi erano davvero i tuoi antenati.",
-  "We design your itinerary":
-    "Progettiamo il tuo itinerario",
-  "If you have chosen the Full Heritage Journey, this is where we plan the visit together: which villages, how many days, which regions, what add-ons (food & wine experiences anywhere in Italy, copies of certified documents, etc.). You stay in charge of the pace.":
-    "Se hai scelto il Viaggio Completo nelle Radici, è qui che pianifichiamo insieme la visita: quali paesi, quanti giorni, quali regioni, quali add-on (esperienze enogastronomiche in tutta Italia, copie di documenti certificati, ecc.). Il ritmo lo decidi tu.",
-  "You arrive in Italy":
-    "Arrivi in Italia",
-  "Rita meets you at your hotel or at the train station — whichever you prefer. She has already coordinated with the priests, the mayors, the relatives. From this moment on you are not a tourist; you are a family member coming back.":
-    "Rita ti viene incontro in albergo o alla stazione — come preferisci. Si è già coordinata con i parroci, i sindaci, i parenti. Da questo momento non sei un turista: sei un membro della famiglia che torna.",
+  "Design & start your Full Heritage Journey":
+    "Progetta e inizia il tuo Viaggio Completo nelle Radici",
+  "Decide with Rita what you want to visit in Italy, how many days, and which add-ons you would like. Then you arrive in Italy and Rita meets you at your hotel, the train station or the airport. She has already coordinated with the municipal offices, the priest, the people in town and the relatives. From this moment on you are not a tourist; you are a family member coming back.":
+    "Decidi con Rita che cosa vuoi visitare in Italia, per quanti giorni e quali add-on desideri. Poi arrivi in Italia e Rita ti viene incontro in albergo, alla stazione o all'aeroporto. Si è già coordinata con gli uffici comunali, il parroco, la gente del paese e i parenti. Da questo momento non sei un turista: sei un membro della famiglia che torna.",
   "First meeting — real cousins getting to know each other.":
     "Primo incontro &mdash; cugini veri che cominciano a conoscersi.",
   "The walk & the meeting":
