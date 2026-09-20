@@ -31,8 +31,8 @@ window.I18N_IT = {
     "Richiedi un preventivo",
   "Italy — for those who carry her in their name":
     "L'Italia &mdash; per chi la porta nel proprio nome",
-  "Find the village your family came from.":
-    "Trova il paese <span class=\"italic\">da cui la tua famiglia</span> <span class=\"underline\">è partita.</span>",
+  "Find the family you never knew you missed.":
+    "Trova la famiglia <span class=\"italic\">che non sapevi</span> <span class=\"underline\">di aver perso.</span>",
   "We trace your Italian ancestors back to the parish records, the stone streets and — when they consent — the living relatives who still remember the name.":
     "Seguiamo le tracce dei tuoi antenati italiani fino ai registri parrocchiali, alle strade di pietra e — quando acconsentono — ai parenti che ancora ricordano quel cognome.",
   "Discover The Experience":
@@ -143,6 +143,8 @@ window.I18N_IT = {
     "&ldquo;Rita è fantastica! Sono un'americana di origini italiane. Ha un'energia positiva inesauribile, un grande senso dell'umorismo, è intelligente e non ha mai incontrato un estraneo. È il tuo biglietto per il viaggio di una vita.&rdquo;",
   "“Rita’s warmth, charisma, and local knowledge made every moment special. By the end of our time together, she felt like family. We feel incredibly fortunate to have met her and recommend her wholeheartedly to anyone looking for an authentic and unforgettable experience”":
     "&ldquo;Il calore di Rita, il suo carisma e la sua conoscenza del territorio hanno reso speciale ogni momento. Alla fine del nostro tempo insieme sembrava di famiglia. Ci sentiamo incredibilmente fortunati di averla conosciuta e la consigliamo con tutto il cuore a chiunque cerchi un'esperienza autentica e indimenticabile&rdquo;",
+  "“Not only did we see the big ticket items, she shared a lot of smaller local gems that we would never have found on our own. Visiting a small family run traditional balsamic vinegar operation was one of our favorite things we did in Italy. She also knows the best authentic cafés and restaurants, so we avoided any tourist traps.”":
+    "&ldquo;Non ci ha mostrato soltanto le cose più famose: ci ha fatto scoprire tanti piccoli gioielli locali che da soli non avremmo mai trovato. Visitare una piccola acetaia familiare di aceto balsamico tradizionale è stata una delle cose più belle che abbiamo fatto in Italia. Conosce anche i caffè e i ristoranti autentici migliori, così abbiamo evitato ogni trappola per turisti.&rdquo;",
   "“Rita is amazing! She has a wealth of knowledge, resources and connections for myriad Italian experiences. I could not have had such a fabulous introduction to Italy without her and I can’t wait to go back! Grazie mille!”":
     "&ldquo;Rita è straordinaria! Ha una conoscenza, delle risorse e dei contatti infiniti per ogni genere di esperienza italiana. Non avrei potuto avere un'introduzione all'Italia così bella senza di lei e non vedo l'ora di tornare! Grazie mille!&rdquo;",
   "Read more stories":
@@ -485,8 +487,8 @@ window.I18N_IT = {
     "Con le loro parole",
   "What people say":
     "Che cosa dicono",
-  "Five families, five American states. These are their accounts in full.":
-    "Cinque famiglie, cinque stati americani. Ecco i loro racconti per intero.",
+  "The families who have already made the journey, in their own words — their accounts in full.":
+    "Le famiglie che hanno già fatto questo viaggio, con le loro parole — i racconti per intero.",
   "“I knew my paternal grandfather’s name and the name of the village in Sicily he left to immigrate to America. The idea of visiting the village to research names and locations was daunting. However, my desire to connect with living relatives was real. I asked Rita, my Italian friend, to accompany me to Sicily in my quest. I knew through her knowledge, experience and passion she could navigate her way through historic records at Town Hall and the Catholic Church.":
     "&ldquo;Conoscevo il nome di mio nonno paterno e il nome del paese in Sicilia che aveva lasciato per emigrare in America. L'idea di visitare quel paese per cercare nomi e luoghi era scoraggiante. Ma il mio desiderio di ritrovare parenti viventi era reale. Ho chiesto a Rita, la mia amica italiana, di accompagnarmi in Sicilia in questa impresa. Sapevo che con la sua conoscenza, la sua esperienza e la sua passione avrebbe saputo muoversi fra i documenti storici del municipio e della chiesa.",
   "Beyond her technical skills Rita is exceptionally warm and genial. There was no doubt she could easily communicate and translate if and when we connected with family. With Rita’s help we accomplished what we set out to do. My Italian family has shown me nothing but warmth, generosity and acceptance. We have maintained contacts for four years and I will soon visit them for the third time. I am truly grateful to Rita. Through her efforts I have deeper appreciation of my heritage and a family I never knew I had.”":
@@ -505,6 +507,12 @@ window.I18N_IT = {
     "&ldquo;I nostri due giorni con Rita nel maggio 2026 sono stati davvero magici e fra i momenti più belli del nostro viaggio in Italia. Ci ha portati a Bologna, Modena e Parma, aiutandoci a vivere al meglio ogni esperienza, dal Museo Ferrari a un incredibile tour del Parmigiano Reggiano. Ci ha anche indicato una degustazione di vini meravigliosa, che è diventata uno dei nostri ricordi preferiti.",
   "Rita’s warmth, charisma, and local knowledge made every moment special. By the end of our time together, she felt like family. We feel incredibly fortunate to have met her and recommend her wholeheartedly to anyone looking for an authentic and unforgettable experience in Emilia-Romagna.”":
     "Il calore di Rita, il suo carisma e la sua conoscenza del territorio hanno reso speciale ogni momento. Alla fine del nostro tempo insieme sembrava di famiglia. Ci sentiamo incredibilmente fortunati di averla conosciuta e la consigliamo con tutto il cuore a chiunque cerchi un'esperienza autentica e indimenticabile in Emilia-Romagna.&rdquo;",
+  "“I cannot say enough wonderful things about Rita as a person and as a guide in Italy! From the moment our family of six met her, she treated us like old friends. We had a full day where she guided us around the highlights of Modena, it’s history, architecture and culinary treasures. Not only did we see the big ticket items, she shared a lot of smaller local gems that we would never have found on our own. Visiting a small family run traditional balsamic vinegar operation was one of our favorite things we did in Italy.":
+    "&ldquo;Non ci sono parole sufficienti per dire quanto Rita sia meravigliosa, come persona e come guida in Italia! Dal momento in cui la nostra famiglia di sei persone l'ha incontrata, ci ha trattati come vecchi amici. Abbiamo passato un'intera giornata in cui ci ha guidati fra le bellezze di Modena: la sua storia, la sua architettura e i suoi tesori gastronomici. Non ci ha mostrato soltanto le cose più famose: ci ha fatto scoprire tanti piccoli gioielli locali che da soli non avremmo mai trovato. Visitare una piccola acetaia familiare di aceto balsamico tradizionale è stata una delle cose più belle che abbiamo fatto in Italia.",
+  "Rita also guided us through Bologna, where she shared her extensive knowledge of the history and cultural environment. She knows the city so well, she even studied there! So we really benefited from her insider knowledge. She also knows the best authentic cafés and restaurants, so we avoided any tourist traps.":
+    "Rita ci ha guidati anche a Bologna, dove ci ha trasmesso la sua profonda conoscenza della storia e della vita culturale della città. La conosce così bene che ci ha perfino studiato! Abbiamo davvero approfittato del suo sguardo da persona del posto. Conosce anche i caffè e i ristoranti autentici migliori, così abbiamo evitato ogni trappola per turisti.",
+  "Rita is a delight to tour with, she is warm, friendly, knowledgeable, easy-going, and has a wonderful sense of humor. I cannot recommend her enough ❤️”":
+    "Viaggiare con Rita è una gioia: è calorosa, cordiale, preparata, alla mano e ha un senso dell'umorismo splendido. Non potrei consigliarla di più &#10084;&#65039;&rdquo;",
   "Your story could be next.":
     "La prossima storia potrebbe essere la tua.",
   "Use the configurator to tell us about your family and we'll write you a quote.":
@@ -887,7 +895,7 @@ window.I18N_IT_META = {
   "about.html": { title: "Chi è Rita — Ricerca genealogica italiana", desc: "Rita Roncassaglia, ricercatrice genealogica. Trent'anni fra Italia e Stati Uniti, laurea in Lingua e Letteratura Inglese all'Università di Bologna." },
   "services.html": { title: "Servizi — I pacchetti per le radici italiane", desc: "Due pacchetti: il Pacchetto Ricerca, con Rita negli archivi italiani, e il Viaggio Completo nelle Radici, con Rita accanto a te in Italia. Nessun prezzo fisso: ogni preventivo è scritto a mano." },
   "experience.html": { title: "L'Esperienza — Come funziona un viaggio nelle radici", desc: "Passo per passo: dal preventivo alla verifica dei documenti, dal contatto discreto con i parenti viventi all'incontro nel paese degli antenati." },
-  "testimonials.html": { title: "Storie — Le famiglie che sono già tornate a casa", desc: "Cinque famiglie americane raccontano con parole loro il viaggio nelle radici italiane fatto insieme a Rita." },
+  "testimonials.html": { title: "Storie — Le famiglie che sono già tornate a casa", desc: "Le famiglie americane raccontano con parole loro il viaggio nelle radici italiane fatto insieme a Rita." },
   "quote.html": { title: "Richiedi un preventivo — Viaggio nelle radici italiane", desc: "Cinque passi brevi per comporre la tua richiesta: pacchetto, add-on, famiglia e preferenze di viaggio. Preventivo su misura entro 48 ore, senza impegno." },
   "contact.html": { title: "Contatti — Italian Roots with Rita", desc: "Scrivi a Rita per email. Percorso dedicato per chi deve ancora costruire il proprio albero genealogico." },
   "privacy.html": { title: "Informativa privacy — Italian Roots with Rita", desc: "Che fine fanno i tuoi dati: questo sito non raccoglie nulla per conto proprio e ciò che ci mandi serve soltanto a risponderti." },

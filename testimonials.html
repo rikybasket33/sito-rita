@@ -17,6 +17,12 @@
       }
       apply();
       window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+      /* Le animazioni di ingresso (.reveal) partono da opacity:0 e vengono
+         accese da main.js. Se lo script non arriva — rete lenta sul cellulare,
+         blocco degli script, errore JS — senza questa classe foto e testi
+         resterebbero invisibili per sempre. Il CSS nasconde .reveal solo
+         quando trova html.js, quindi senza JS la pagina si vede tutta. */
+      document.documentElement.className += " js";
     })();
   </script>
   <title>Stories — Families We've Helped Come Home</title>
@@ -100,7 +106,7 @@
           <span class="eyebrow eyebrow--center reveal">In their own words</span>
           <h2 class="section-title reveal">What people say</h2>
           <p class="section-subtitle reveal" style="margin-left:auto; margin-right:auto;">
-            Five families, five American states. These are their accounts in full.
+            The families who have already made the journey, in their own words &mdash; their accounts in full.
           </p>
         </div>
 
@@ -160,6 +166,19 @@
               <div>
                 <div class="testimonial__name">Jennifer and Justin Capasso</div>
                 <div class="testimonial__from">Los Angeles, California</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="80" style="margin-bottom: 2rem;">
+            <p class="testimonial__body">&ldquo;I cannot say enough wonderful things about Rita as a person and as a guide in Italy! From the moment our family of six met her, she treated us like old friends. We had a full day where she guided us around the highlights of Modena, it&rsquo;s history, architecture and culinary treasures. Not only did we see the big ticket items, she shared a lot of smaller local gems that we would never have found on our own. Visiting a small family run traditional balsamic vinegar operation was one of our favorite things we did in Italy.</p>
+            <p class="testimonial__body">Rita also guided us through Bologna, where she shared her extensive knowledge of the history and cultural environment. She knows the city so well, she even studied there! So we really benefited from her insider knowledge. She also knows the best authentic caf&eacute;s and restaurants, so we avoided any tourist traps.</p>
+            <p class="testimonial__body">Rita is a delight to tour with, she is warm, friendly, knowledgeable, easy-going, and has a wonderful sense of humor. I cannot recommend her enough &#10084;&#65039;&rdquo;</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">RV</div>
+              <div>
+                <div class="testimonial__name">Roberta Vinkhuyzen</div>
+                <div class="testimonial__from">Morgan Hill, California</div>
               </div>
             </div>
           </article>

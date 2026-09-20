@@ -17,6 +17,12 @@
       }
       apply();
       window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+      /* Le animazioni di ingresso (.reveal) partono da opacity:0 e vengono
+         accese da main.js. Se lo script non arriva — rete lenta sul cellulare,
+         blocco degli script, errore JS — senza questa classe foto e testi
+         resterebbero invisibili per sempre. Il CSS nasconde .reveal solo
+         quando trova html.js, quindi senza JS la pagina si vede tutta. */
+      document.documentElement.className += " js";
     })();
   </script>
   <title>The Experience — How an Italian Heritage Journey Works</title>
@@ -61,10 +67,10 @@
     .exp .media-frame__corner { filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5)); }
 
     /* --- ingresso da destra / da sinistra --------------------- */
-    .exp .reveal.reveal--left  { transform: translate3d(-64px, 22px, 0); }
-    .exp .reveal.reveal--right { transform: translate3d(64px, 22px, 0); }
-    .exp .reveal.is-visible.reveal--left,
-    .exp .reveal.is-visible.reveal--right { transform: none; }
+    .js .exp .reveal.reveal--left  { transform: translate3d(-64px, 22px, 0); }
+    .js .exp .reveal.reveal--right { transform: translate3d(64px, 22px, 0); }
+    .js .exp .reveal.is-visible.reveal--left,
+    .js .exp .reveal.is-visible.reveal--right { transform: none; }
 
     /* --- le tre stampe sotto il titolo ------------------------ */
     .prints {
@@ -99,6 +105,16 @@
       .prints { grid-template-columns: 1fr 1fr; gap: 0.9rem; }
       .print--b { grid-column: 1 / -1; order: -1; width: min(78%, 320px); margin: 0 auto 0.6rem; }
       .print--a, .print--c { margin-top: 0; }
+
+      /* Niente rotazione sul telefono. Una cornice ruotata che somma
+         transform + overflow:hidden + border-radius e' un caso in cui
+         WebKit (iPhone) a volte disegna il riquadro vuoto al posto della
+         foto. Inoltre gli angoli ruotati venivano tagliati dal bordo
+         dello schermo: dritte stanno meglio e si vedono sempre. */
+      .print--a .media-frame,
+      .print--b .media-frame,
+      .print--c .media-frame { transform: none; }
+      .print .media-frame:hover { transform: translateY(-4px); }
     }
 
     /* --- le foto che escono dalla colonna del testo ----------- */
@@ -154,8 +170,8 @@
       pointer-events: none;
     }
     /* la foto entra e si allarga piano piano (effetto Ken Burns) */
-    .exp .reveal.exp-dark__bg { opacity: 0; transform: scale(1.14); transition: opacity 1.5s var(--ease), transform 3s var(--ease); }
-    .exp .reveal.exp-dark__bg.is-visible { opacity: 0.45; transform: scale(1); }
+    .js .exp .reveal.exp-dark__bg { opacity: 0; transform: scale(1.14); transition: opacity 1.5s var(--ease), transform 3s var(--ease); }
+    .js .exp .reveal.exp-dark__bg.is-visible { opacity: 0.45; transform: scale(1); }
 
     .exp-dark::after {          /* velo, per tenere il testo leggibile */
       content: "";
@@ -188,13 +204,13 @@
 
     /* --- chi preferisce meno movimento ----------------------- */
     @media (prefers-reduced-motion: reduce) {
-      .exp .reveal.reveal--left,
-      .exp .reveal.reveal--right { transform: none; }
+      .js .exp .reveal.reveal--left,
+      .js .exp .reveal.reveal--right { transform: none; }
       .print--a .media-frame,
       .print--b .media-frame,
       .print--c .media-frame { transform: none; }
-      .exp .reveal.exp-dark__bg { transform: none; transition: opacity 0.4s linear; }
-      .exp .reveal.exp-dark__bg.is-visible { transform: none; }
+      .js .exp .reveal.exp-dark__bg { transform: none; transition: opacity 0.4s linear; }
+      .js .exp .reveal.exp-dark__bg.is-visible { transform: none; }
     }
   </style>
 </head>

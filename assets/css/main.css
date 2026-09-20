@@ -1189,22 +1189,32 @@ a:hover { color: var(--c-terracotta); }
 /* =============================================================
    REVEAL / MICRO ANIMATIONS
    ============================================================= */
-.reveal {
+/* Regola d'oro: .reveal nasconde il contenuto SOLO se il JavaScript e'
+   davvero attivo (html.js, messa dallo script inline nel <head>). Senza
+   questa condizione, un main.js che non arriva — rete mobile lenta, script
+   bloccati, un errore JS a monte — lascerebbe foto e testi invisibili per
+   sempre. Il caso peggiore diventa "nessuna animazione", non "pagina vuota". */
+.js .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition:
     opacity var(--t-slow) var(--ease),
     transform var(--t-slow) var(--ease);
-  will-change: transform, opacity;
 }
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: none;
 }
-.reveal.reveal--left  { transform: translateX(-28px); }
-.reveal.reveal--right { transform: translateX(28px); }
-.reveal.is-visible.reveal--left,
-.reveal.is-visible.reveal--right { transform: none; }
+.js .reveal.reveal--left  { transform: translateX(-28px); }
+.js .reveal.reveal--right { transform: translateX(28px); }
+.js .reveal.is-visible.reveal--left,
+.js .reveal.is-visible.reveal--right { transform: none; }
+
+/* will-change solo finche' l'elemento deve ancora entrare. Tenerlo acceso
+   su tutti i .reveal creava decine di layer di composizione permanenti: su
+   iPhone la memoria video finisce e le foto grandi vengono disegnate vuote.
+   Appena l'elemento e' visibile il layer viene liberato. */
+.js .reveal:not(.is-visible) { will-change: transform, opacity; }
 
 .reveal[data-delay="100"] { transition-delay: 100ms; }
 .reveal[data-delay="200"] { transition-delay: 200ms; }
@@ -1293,7 +1303,7 @@ a:hover { color: var(--c-terracotta); }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal, .js .reveal.reveal--left, .js .reveal.reveal--right { opacity: 1; transform: none; }
 }
 
 /* =============================================================

@@ -17,6 +17,12 @@
       }
       apply();
       window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+      /* Le animazioni di ingresso (.reveal) partono da opacity:0 e vengono
+         accese da main.js. Se lo script non arriva — rete lenta sul cellulare,
+         blocco degli script, errore JS — senza questa classe foto e testi
+         resterebbero invisibili per sempre. Il CSS nasconde .reveal solo
+         quando trova html.js, quindi senza JS la pagina si vede tutta. */
+      document.documentElement.className += " js";
     })();
   </script>
   <title>Cookies — Italian Roots with Rita</title>

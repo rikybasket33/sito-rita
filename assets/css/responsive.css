@@ -442,11 +442,13 @@ h1, h2, h3, h4 { overflow-wrap: break-word; word-wrap: break-word; }
 @media (max-width: 640px) {
 
   /* Reveal animations must not move sideways on phones (would cause a
-     horizontal jiggle / scrollbar). Use vertical motion only. */
-  .reveal.reveal--left,
-  .reveal.reveal--right { transform: translateY(26px) !important; }
-  .reveal.is-visible.reveal--left,
-  .reveal.is-visible.reveal--right { transform: none !important; }
+     horizontal jiggle / scrollbar). Use vertical motion only.
+     Scoped to .js: senza JavaScript il contenuto non deve restare
+     spostato di 26px per sempre. */
+  .js .reveal.reveal--left,
+  .js .reveal.reveal--right { transform: translateY(26px) !important; }
+  .js .reveal.is-visible.reveal--left,
+  .js .reveal.is-visible.reveal--right { transform: none !important; }
 
   /* --- Hero --- */
   .hero { padding: 1rem 0 2.2rem; }

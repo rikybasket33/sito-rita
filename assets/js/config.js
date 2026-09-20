@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
        Se restano vuoti, main.js non popola nessun elemento data-biz="phone". */
     phone: "",
     whatsapp: "",
-    publicEmail: "rita.mail@esempio.com",   // mostrata nella pagina contatti
+    publicEmail: "rita.roots@gmail.com",   // mostrata nella pagina contatti
     /* Profilo Instagram. Appena la pagina e' online incolla qui l'indirizzo
        completo (es. "https://www.instagram.com/nomeprofilo/"): il link nel
        footer di tutte le pagine si aggiorna da solo. Finche' resta vuoto,
@@ -58,7 +58,7 @@ window.SITE_CONFIG = {
       /* Incolla qui l'endpoint Formspree (es. "https://formspree.io/f/xyzabc12").
          Finché contiene "YOUR_FORM_ID", il sito ricade automaticamente
          sulla modalità mailto. */
-      endpoint: "https://formspree.io/f/mdavrnql"
+      endpoint: "https://formspree.io/f/YOUR_FORM_ID"
     },
 
     /* --- EmailJS (opzionale) --- */

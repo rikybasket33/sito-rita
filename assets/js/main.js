@@ -82,17 +82,24 @@
     });
   }
 
-  /* ---------- Scroll-reveal via IntersectionObserver ---------- */
+  /* ---------- Scroll-reveal via IntersectionObserver ----------
+     Regola: un .reveal puo' solo finire visibile, mai restare nascosto.
+     Tutto cio' che segue serve a garantirlo anche quando l'observer non
+     collabora (succede sui browser dei telefoni). */
   function setupReveal() {
-    if (!cfg.enableAnimations) {
-      document.querySelectorAll(".reveal").forEach(el => el.classList.add("is-visible"));
-      return;
-    }
-    if (!("IntersectionObserver" in window)) {
-      document.querySelectorAll(".reveal").forEach(el => el.classList.add("is-visible"));
-      return;
-    }
     const els = document.querySelectorAll(".reveal");
+    if (!els.length) return;
+
+    const showAll = () => els.forEach(el => el.classList.add("is-visible"));
+
+    if (!cfg.enableAnimations || !("IntersectionObserver" in window)) {
+      showAll();
+      return;
+    }
+
+    // threshold 0: basta un pixel a schermo. Con la soglia al 12% un
+    // elemento piu' alto del viewport (le foto verticali sul cellulare)
+    // poteva non raggiungerla mai e restare invisibile per sempre.
     const io = new IntersectionObserver(
       entries => {
         entries.forEach(e => {
@@ -102,23 +109,38 @@
           }
         });
       },
-      { rootMargin: "0px 0px -10% 0px", threshold: 0.12 }
+      { rootMargin: "0px 0px -8% 0px", threshold: 0 }
     );
     els.forEach(el => io.observe(el));
 
-    // Safety net: reveal anything already on screen right away (some engines
-    // don't deliver the initial IntersectionObserver callback), so above-the-
-    // fold content is never left hidden. Scroll-in is still handled by the IO.
+    // Rete di sicurezza indipendente dall'observer: a ogni scroll accende
+    // tutto cio' che e' entrato nel viewport. Copre i motori che non
+    // consegnano la prima callback e quelli che la perdono dopo un
+    // cambio di orientamento o un resize della barra del browser.
+    let queued = false;
     const revealInView = () => {
+      queued = false;
+      const vh = window.innerHeight || document.documentElement.clientHeight || 0;
       els.forEach(el => {
+        if (el.classList.contains("is-visible")) return;
         const r = el.getBoundingClientRect();
-        if (r.top < (window.innerHeight || 0) * 0.95 && r.bottom > 0) {
-          el.classList.add("is-visible");
-        }
+        if (r.top < vh * 0.98 && r.bottom > 0) el.classList.add("is-visible");
       });
+    };
+    const schedule = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(revealInView);
     };
     revealInView();
     window.addEventListener("load", revealInView);
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule, { passive: true });
+    window.addEventListener("orientationchange", schedule, { passive: true });
+
+    // Ultima rete: dopo 6 secondi niente resta nascosto, qualunque cosa sia
+    // andata storta. Meglio una foto senza animazione che una foto assente.
+    setTimeout(showAll, 6000);
   }
 
   /* ---------- Word-by-word reveal for the hero headline ---------- */

@@ -17,6 +17,12 @@
       }
       apply();
       window.addEventListener("pageshow", function(e){ if(e.persisted) apply(); });
+      /* Le animazioni di ingresso (.reveal) partono da opacity:0 e vengono
+         accese da main.js. Se lo script non arriva — rete lenta sul cellulare,
+         blocco degli script, errore JS — senza questa classe foto e testi
+         resterebbero invisibili per sempre. Il CSS nasconde .reveal solo
+         quando trova html.js, quindi senza JS la pagina si vede tutta. */
+      document.documentElement.className += " js";
     })();
   </script>
   <title>Italian Roots with Rita — Ancestry Research & Heritage Journeys</title>
@@ -34,7 +40,7 @@
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Italian Roots with Rita — Ancestry Research & Heritage Journeys" />
-  <meta name="twitter:description" content="Find the village your family came from. Document research and heritage journeys across Italy." />
+  <meta name="twitter:description" content="Find the family you never knew you missed. Document research and heritage journeys across Italy." />
   <meta name="twitter:image" content="https://rikybasket33.github.io/sito-rita/assets/img/og-card.png" />
 
   <link rel="stylesheet" href="assets/css/fonts.css">
@@ -111,9 +117,9 @@
         <div>
           <span class="eyebrow">Italy &mdash; for those who carry her in their name</span>
           <h1 class="hero__title" data-word-reveal>
-            Find the village
-            <span class="italic">your family</span>
-            <span class="underline">came from.</span>
+            Find the family
+            <span class="italic">you never knew</span>
+            <span class="underline">you missed.</span>
           </h1>
           <p class="hero__lead reveal" data-delay="400">
             We trace your Italian ancestors back to the parish records, the stone streets and — when they consent — the living relatives who still remember the name.
@@ -395,6 +401,19 @@
               <div>
                 <div class="testimonial__name">Gretchen K.</div>
                 <div class="testimonial__from">Green Valley, Arizona</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal" data-delay="400">
+            <p class="testimonial__body">
+              &ldquo;Not only did we see the big ticket items, she shared a lot of smaller local gems that we would never have found on our own. Visiting a small family run traditional balsamic vinegar operation was one of our favorite things we did in Italy. She also knows the best authentic caf&eacute;s and restaurants, so we avoided any tourist traps.&rdquo;
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">RV</div>
+              <div>
+                <div class="testimonial__name">Roberta Vinkhuyzen</div>
+                <div class="testimonial__from">Morgan Hill, California</div>
               </div>
             </div>
           </article>
