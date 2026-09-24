@@ -719,6 +719,19 @@ a:hover { color: var(--c-terracotta); }
   gap: 1.8rem;
 }
 
+/* Nota "recensioni in lingua originale": esiste solo nel sito italiano.
+   i18n.js imposta <html lang>, quindi in inglese resta nascosta. */
+.reviews-note {
+  font-family: var(--f-accent);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--c-ink-soft);
+  max-width: 60ch;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+html:not([lang="it"]) .reviews-note { display: none; }
+
 /* =============================================================
    PROCESS STEPS
    ============================================================= */
@@ -1134,7 +1147,7 @@ a:hover { color: var(--c-terracotta); }
    ============================================================= */
 .footer {
   background: var(--c-ink);
-  color: var(--c-cream);
+  color: var(--c-text-fixed-light);
   padding: 4rem 0 1.5rem;
 }
 .footer__grid {
@@ -1149,8 +1162,10 @@ a:hover { color: var(--c-terracotta); }
   letter-spacing: 0.06em;
   margin-bottom: 1rem;
 }
+/* --c-text-fixed-light, non --c-cream: in modalita' scura --c-cream diventa
+   un marrone scuro e i link sparirebbero sul fondo del footer. */
 .footer a {
-  color: var(--c-cream);
+  color: var(--c-text-fixed-light);
   display: inline-block;
   padding: 0.25rem 0;
 }

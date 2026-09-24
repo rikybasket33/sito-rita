@@ -32,9 +32,9 @@ window.I18N_IT = {
   "Italy — for those who carry her in their name":
     "L'Italia &mdash; per chi la porta nel proprio nome",
   "Find the family you never knew you missed.":
-    "Trova la famiglia <span class=\"italic\">che non sapevi</span> <span class=\"underline\">di aver perso.</span>",
+    "Trova la famiglia <span class=\"italic\">che non sapevi</span> <span class=\"underline\">che ti mancasse.</span>",
   "We trace your Italian ancestors back to the parish records, the stone streets and — when they consent — the living relatives who still remember the name.":
-    "Seguiamo le tracce dei tuoi antenati italiani fino ai registri parrocchiali, alle strade di pietra e — quando acconsentono — ai parenti che ancora ricordano quel cognome.",
+    "Seguiamo le tracce dei tuoi antenati italiani fino ai registri parrocchiali, alle strade di pietra e — quando acconsentono — ai parenti che ancora portano quel cognome.",
   "Discover The Experience":
     "Scopri L'Esperienza",
   "Going back to your roots is like rediscovering a part of yourself that you never knew existed.":
@@ -52,7 +52,7 @@ window.I18N_IT = {
   "What we do":
     "Che cosa facciamo",
   "Italian roots, found and walked":
-    "Radici italiane: trovate e percorse",
+    "Radici italiane: trovate e vissute",
   "We work with American families who already have a family tree and want the next chapter: the actual paper trail, the home town, and — if your relatives in Italy agree — the reunion itself.":
     "Lavoriamo con famiglie americane che hanno già un albero genealogico e vogliono il capitolo successivo: i documenti veri, il paese d'origine e — se i parenti in Italia sono d'accordo — l'incontro.",
   "Document research":
@@ -104,7 +104,7 @@ window.I18N_IT = {
   "Rita does the research on her own; you receive the result":
     "Rita svolge la ricerca da sola; tu ne ricevi il risultato",
   "Travel and archive fees are reimbursed at cost. We share receipts.":
-    "Le spese di viaggio e di archivio sono rimborsate al costo. Condividiamo le ricevute.",
+    "Le spese di viaggio e di archivio sono rimborsate al costo. Forniamo le ricevute.",
   "More details":
     "Più dettagli",
   "Most chosen":
@@ -124,7 +124,7 @@ window.I18N_IT = {
   "Optional food & wine experiences anywhere in Italy":
     "Esperienze enogastronomiche in tutta Italia, a scelta",
   "Copies of certified records we find for your family":
-    "Copie dei documenti certificati che troviamo per la tua famiglia",
+    "Copie dei documenti certificati che troviamo relativi alla tua famiglia",
   "Fully customisable. Configure your preferences when you request a quote.":
     "Completamente personalizzabile. Scegli le tue preferenze quando richiedi il preventivo.",
   "Don't have a family tree yet? We can suggest you to start one on FamilySearch.org, which is free — here is where to begin.":
@@ -133,20 +133,6 @@ window.I18N_IT = {
     "Che cosa dicono le famiglie",
   "Reviews":
     "Recensioni",
-  "“I am truly grateful to Rita. Through her skills and efforts I have a deeper appreciation of my heritage and a family I never knew I had”":
-    "&ldquo;Sono davvero grata a Rita. Grazie alla sua competenza e al suo impegno ho una consapevolezza molto più profonda delle mie origini e una famiglia che non sapevo di avere&rdquo;",
-  "“Thanks to Rita my family had this amazing and life-changing opportunity to reconnect with close relatives and after this first time, went back several times to be with our Italian family.”":
-    "&ldquo;Grazie a Rita la mia famiglia ha avuto questa occasione straordinaria, che ci ha cambiato la vita: ritrovare parenti stretti. Dopo quella prima volta siamo tornati altre volte per stare con la nostra famiglia italiana.&rdquo;",
-  "Gina and my father Joe Blundo":
-    "Gina e mio padre Joe Blundo",
-  "“Rita is awesome! I am an American of Italian descent. She has endless positive energy, a great sense of humour, she is intelligent, has never met a stranger. She’s your ticket to a trip of a lifetime.”":
-    "&ldquo;Rita è fantastica! Sono un'americana di origini italiane. Ha un'energia positiva inesauribile, un grande senso dell'umorismo, è intelligente e non ha mai incontrato un estraneo. È il tuo biglietto per il viaggio di una vita.&rdquo;",
-  "“Rita’s warmth, charisma, and local knowledge made every moment special. By the end of our time together, she felt like family. We feel incredibly fortunate to have met her and recommend her wholeheartedly to anyone looking for an authentic and unforgettable experience”":
-    "&ldquo;Il calore di Rita, il suo carisma e la sua conoscenza del territorio hanno reso speciale ogni momento. Alla fine del nostro tempo insieme sembrava di famiglia. Ci sentiamo incredibilmente fortunati di averla conosciuta e la consigliamo con tutto il cuore a chiunque cerchi un'esperienza autentica e indimenticabile&rdquo;",
-  "“Not only did we see the big ticket items, she shared a lot of smaller local gems that we would never have found on our own. Visiting a small family run traditional balsamic vinegar operation was one of our favorite things we did in Italy. She also knows the best authentic cafés and restaurants, so we avoided any tourist traps.”":
-    "&ldquo;Non ci ha mostrato soltanto le cose più famose: ci ha fatto scoprire tanti piccoli gioielli locali che da soli non avremmo mai trovato. Visitare una piccola acetaia familiare di aceto balsamico tradizionale è stata una delle cose più belle che abbiamo fatto in Italia. Conosce anche i caffè e i ristoranti autentici migliori, così abbiamo evitato ogni trappola per turisti.&rdquo;",
-  "“Rita is amazing! She has a wealth of knowledge, resources and connections for myriad Italian experiences. I could not have had such a fabulous introduction to Italy without her and I can’t wait to go back! Grazie mille!”":
-    "&ldquo;Rita è straordinaria! Ha una conoscenza, delle risorse e dei contatti infiniti per ogni genere di esperienza italiana. Non avrei potuto avere un'introduzione all'Italia così bella senza di lei e non vedo l'ora di tornare! Grazie mille!&rdquo;",
   "Read more stories":
     "Leggi altre storie",
   "No pressure, no cost":
@@ -168,7 +154,7 @@ window.I18N_IT = {
   "Build my quote":
     "Crea il mio preventivo",
   "Italian ancestry research and heritage journeys for American families who already have a family tree — and want the next chapter.":
-    "Ricerca genealogica e viaggi nelle radici italiane per famiglie americane che hanno già un albero genealogico — e vogliono il capitolo successivo.",
+    "Ricerca documentata e viaggi nelle radici italiane per famiglie americane che hanno già un albero genealogico — e vogliono il capitolo successivo.",
   "Explore":
     "Esplora",
   "The experience":
@@ -248,7 +234,7 @@ window.I18N_IT = {
   "Two packages, boundless paths.":
     "Due pacchetti, infinite strade.",
   "Because every family is different, we do not publish fixed prices. Each quote is written by hand after we understand what you actually want.":
-    "Poiché ogni famiglia è diversa, non pubblichiamo prezzi fissi. Ogni preventivo è scritto a mano, dopo aver capito che cosa desideri davvero.",
+    "Poiché ogni famiglia è diversa, non pubblichiamo prezzi fissi. Ogni preventivo è preparato ad hoc, dopo aver capito che cosa desideri davvero.",
   "Package one":
     "Pacchetto uno",
   "You stay home. Rita does the legwork.":
@@ -268,7 +254,7 @@ window.I18N_IT = {
   "Whether those living relatives would be open to a contact — or to a visit":
     "Se quei parenti viventi sarebbero disponibili a un contatto — o a una visita",
   "Travel and archive fees are reimbursed at cost. We always share the receipts. The research fee itself is quoted after we see the size of your tree and the towns involved.":
-    "<strong>Le spese di viaggio e di archivio sono rimborsate al costo.</strong> Condividiamo sempre le ricevute. L'onorario della ricerca viene invece quotato dopo aver visto la dimensione del tuo albero e i comuni coinvolti.",
+    "<strong>Le spese di viaggio e di archivio sono rimborsate al costo.</strong> Forniamo sempre le ricevute. L'onorario della ricerca viene invece quotato dopo aver visto la dimensione del tuo albero e i comuni coinvolti.",
   "In this package Rita goes to the archives on her own and sends you the result. If you would rather be standing there when your ancestor's record comes off the shelf, that is the Full Heritage Journey.":
     "In questo pacchetto Rita va negli archivi da sola e ti manda il risultato. Se preferisci essere lì quando il documento del tuo antenato viene tirato fuori dallo scaffale, allora è il <a href=\"#journey\">Viaggio Completo nelle Radici</a>.",
   "Request a research quote →":
@@ -294,15 +280,15 @@ window.I18N_IT = {
   "Translated meetings with the relatives who agreed to meet you.":
     "<strong>Incontri tradotti</strong> con i parenti che hanno accettato di conoscerti.",
   "Food & wine experiences anywhere in Italy — Rita tells you what is worth your time.":
-    "<strong>Esperienze enogastronomiche in tutta Italia</strong> &mdash; Rita ti dice che cosa merita davvero il tuo tempo.",
+    "<strong>Esperienze enogastronomiche in tutta Italia</strong> &mdash; Rita ti consiglia che cosa merita davvero il tuo tempo.",
   "Copies of certified records — copies of the official documents we find for your family.":
-    "<strong>Copie di documenti certificati</strong> &mdash; copie dei documenti ufficiali che troviamo per la tua famiglia.",
+    "<strong>Copie di documenti certificati</strong> &mdash; copie dei documenti ufficiali che troviamo relativi alla tua famiglia.",
   "It is built around three commitments:":
     "Poggia su tre impegni:",
   "You won't feel like a tourist. Rita knows the side roads, the parish priests, the bakers who remember the surnames.":
     "Non ti sentirai un turista. Rita conosce le strade secondarie, i parroci, i fornai che si ricordano i cognomi.",
   "You won't feel rushed. We plan the itinerary together, based on the documents and on what your family cares about.":
-    "Non ti sentirai di corsa. L'itinerario lo costruiamo insieme, sulla base dei documenti e di ciò che sta a cuore alla tua famiglia.",
+    "Non c'è fretta. L'itinerario lo costruiamo insieme, sulla base dei documenti e di ciò che sta a cuore alla tua famiglia.",
   "You won't feel lost in translation. Rita translates every meeting, every conversation — and respects the privacy of the Italian side at every step.":
     "Non ti sentirai perso nella traduzione. Rita traduce ogni incontro, ogni conversazione — e rispetta la privacy della parte italiana in ogni momento.",
   "The journey is fully customisable. Pick the add-ons you want when you request your quote.":
@@ -410,7 +396,7 @@ window.I18N_IT = {
   "Design & start your Full Heritage Journey":
     "Progetta e inizia il tuo Viaggio Completo nelle Radici",
   "Decide with Rita what you want to visit in Italy, how many days, and which add-ons you would like. Then you arrive in Italy and Rita meets you at your hotel, the train station or the airport. She has already coordinated with the municipal offices, the priest, the people in town and the relatives. From this moment on you are not a tourist; you are a family member coming back.":
-    "Decidi con Rita che cosa vuoi visitare in Italia, per quanti giorni e quali add-on desideri. Poi arrivi in Italia e Rita ti viene incontro in albergo, alla stazione o all'aeroporto. Si è già coordinata con gli uffici comunali, il parroco, la gente del paese e i parenti. Da questo momento non sei un turista: sei un membro della famiglia che torna.",
+    "Decidi con Rita che cosa vuoi visitare in Italia, per quanti giorni e quali add-on desideri. Poi arrivi in Italia e Rita ti raggiunge in albergo, alla stazione o all'aeroporto. Si è già coordinata con gli uffici comunali, il parroco, la gente del paese e i parenti. Da questo momento non sei un turista: sei un membro della famiglia che torna.",
   "First meeting — real cousins getting to know each other.":
     "Primo incontro &mdash; cugini veri che cominciano a conoscersi.",
   "The walk & the meeting":
@@ -437,20 +423,17 @@ window.I18N_IT = {
     "Erano seduti dove sei tu adesso.",
   "Four families, four American states, one country they had only heard about.":
     "Quattro famiglie, quattro stati americani, un Paese di cui avevano soltanto sentito parlare.",
-  "“Through her skills and efforts I have a deeper appreciation of my heritage and a family I never knew I had.”":
-    "&ldquo;Grazie alla sua competenza e al suo impegno ho una consapevolezza molto più profonda delle mie origini e una famiglia che non sapevo di avere.&rdquo;",
-  "“My father had the chance to meet some first cousins and an aunt still alive, fulfilling the dream of his life.”":
-    "&ldquo;Mio padre ha avuto la possibilità di incontrare alcuni cugini di primo grado e una zia ancora viva, realizzando il sogno della sua vita.&rdquo;",
-  "“She has endless positive energy, a great sense of humour, has never met a stranger. She is your ticket to a trip of a lifetime.”":
-    "&ldquo;Ha un'energia positiva inesauribile, un grande senso dell'umorismo e non ha mai incontrato un estraneo. È il tuo biglietto per il viaggio di una vita.&rdquo;",
-  "“By the end of our time together, she felt like family. We feel incredibly fortunate to have met her.”":
-    "&ldquo;Alla fine del nostro tempo insieme sembrava di famiglia. Ci sentiamo incredibilmente fortunati di averla conosciuta.&rdquo;",
+  /* La nota sulle recensioni e' scritta direttamente in italiano nell'HTML e si
+     vede solo nel sito italiano (CSS .reviews-note): la chiave coincide con il
+     valore, cosi' i18nAudit() non la segnala come mancante. */
+  "Le recensioni sono riportate in lingua originale, per non snaturare il contenuto di ciò che i visitatori hanno voluto esprimere.":
+    "Le recensioni sono riportate in lingua originale, per non snaturare il contenuto di ciò che i visitatori hanno voluto esprimere.",
   "Read what they wrote →":
     "Leggi che cosa hanno scritto <span class=\"arrow\">&rarr;</span>",
   "Frequently asked":
     "Domande frequenti",
   "Good questions, honest answers":
-    "Buone domande, risposte oneste",
+    "Domande legittime, risposte oneste",
   "Do I really need to have a family tree?":
     "Devo davvero avere un albero genealogico?",
   "We strongly recommend it. The research is faster, deeper and less expensive when we start from a clear tree. That said, if you don't have one yet, we can suggest you to start one on FamilySearch.org, which is free. See where to begin.":
@@ -462,7 +445,7 @@ window.I18N_IT = {
   "Why are there no prices on the site?":
     "Perché sul sito non ci sono prezzi?",
   "Because no two families are the same. The number of villages we have to visit, the size of your tree, the add-ons you choose, the length of the trip — these can vary enormously. We write each quote by hand so it reflects what you actually want.":
-    "Perché non esistono due famiglie uguali. Il numero di paesi da visitare, la dimensione del tuo albero, gli add-on che scegli, la durata del viaggio — possono variare enormemente. Scriviamo ogni preventivo a mano, così rispecchia ciò che <em>tu</em> desideri davvero.",
+    "Perché non esistono due famiglie uguali. Il numero di paesi da visitare, la dimensione del tuo albero, gli add-on che scegli, la durata del viaggio — possono variare enormemente. Prepariamo ogni preventivo ad hoc, così rispecchia ciò che <em>tu</em> desideri davvero.",
   "What if my relatives don't want to meet me?":
     "E se i miei parenti non volessero incontrarmi?",
   "We respect their decision absolutely. You will still receive the full research dossier — the village, the records, the photographs of where they live. Sometimes families ask for time and reach out months later. We have seen that happen many times.":
@@ -489,30 +472,6 @@ window.I18N_IT = {
     "Che cosa dicono",
   "The families who have already made the journey, in their own words — their accounts in full.":
     "Le famiglie che hanno già fatto questo viaggio, con le loro parole — i racconti per intero.",
-  "“I knew my paternal grandfather’s name and the name of the village in Sicily he left to immigrate to America. The idea of visiting the village to research names and locations was daunting. However, my desire to connect with living relatives was real. I asked Rita, my Italian friend, to accompany me to Sicily in my quest. I knew through her knowledge, experience and passion she could navigate her way through historic records at Town Hall and the Catholic Church.":
-    "&ldquo;Conoscevo il nome di mio nonno paterno e il nome del paese in Sicilia che aveva lasciato per emigrare in America. L'idea di visitare quel paese per cercare nomi e luoghi era scoraggiante. Ma il mio desiderio di ritrovare parenti viventi era reale. Ho chiesto a Rita, la mia amica italiana, di accompagnarmi in Sicilia in questa impresa. Sapevo che con la sua conoscenza, la sua esperienza e la sua passione avrebbe saputo muoversi fra i documenti storici del municipio e della chiesa.",
-  "Beyond her technical skills Rita is exceptionally warm and genial. There was no doubt she could easily communicate and translate if and when we connected with family. With Rita’s help we accomplished what we set out to do. My Italian family has shown me nothing but warmth, generosity and acceptance. We have maintained contacts for four years and I will soon visit them for the third time. I am truly grateful to Rita. Through her efforts I have deeper appreciation of my heritage and a family I never knew I had.”":
-    "Oltre alle sue capacità tecniche, Rita è straordinariamente calorosa e cordiale. Non c'era dubbio che sarebbe riuscita a comunicare e a tradurre nel momento in cui avessimo trovato la famiglia. Con il suo aiuto abbiamo realizzato ciò che ci eravamo prefissati. La mia famiglia italiana mi ha mostrato soltanto calore, generosità e accoglienza. Ci teniamo in contatto da quattro anni e presto andrò a trovarli per la terza volta. Sono davvero grata a Rita. Grazie al suo impegno ho una consapevolezza più profonda delle mie origini e una famiglia che non sapevo di avere.&rdquo;",
-  "“Years ago my parents asked Rita to try to connect with their relatives in Sicily. She collected as much info as possible and found them! She contacted them and everybody was welcoming and open to meet us. My parents, my aunt and I flew to Italy to meet and spend some time together. It was the most incredible and emotional experience! My father had the chance to meet some first cousins and an aunt (his father’s sister) still alive, fulfilling the dream of his life. Rita also drove us around the south of Italy and took us to visit some beautiful towns.":
-    "&ldquo;Anni fa i miei genitori chiesero a Rita di provare a mettersi in contatto con i loro parenti in Sicilia. Raccolse più informazioni possibile e li trovò! Li contattò e furono tutti accoglienti e disponibili a incontrarci. I miei genitori, mia zia e io siamo volati in Italia per conoscerli e passare del tempo insieme. È stata l'esperienza più incredibile ed emozionante! Mio padre ha avuto la possibilità di incontrare alcuni cugini di primo grado e una zia (la sorella di suo padre) ancora viva, realizzando il sogno della sua vita. Rita ci ha anche accompagnati in auto nel Sud Italia e ci ha portati a visitare dei paesi bellissimi.",
-  "Thanks to Rita my family had this amazing and life-changing opportunity to reconnect with close relatives and went back several times to be with our Italian family.”":
-    "Grazie a Rita la mia famiglia ha avuto questa occasione straordinaria, che ci ha cambiato la vita: ritrovare parenti stretti. E siamo tornati altre volte per stare con la nostra famiglia italiana.&rdquo;",
-  "“Rita is amazing! She has a wealth of knowledge, resources and connections for myriad Italian experiences whether culinary, historical or cultural. In early 2026, on my first trip to Italy, I spent several days with Rita exploring the best of Emilia-Romagna and surrounding regions. I could not have had such a fabulous introduction to Italy without her and I can’t wait to go back!":
-    "&ldquo;Rita è straordinaria! Ha una conoscenza, delle risorse e dei contatti infiniti per ogni genere di esperienza italiana: culinaria, storica o culturale. All'inizio del 2026, durante il mio primo viaggio in Italia, ho passato diversi giorni con Rita alla scoperta del meglio dell'Emilia-Romagna e delle regioni vicine. Non avrei potuto avere un'introduzione all'Italia così bella senza di lei e non vedo l'ora di tornare!",
-  "Grazie mille Rita! You forever have my gratitude for your generosity and friendship while I was in Italy and ever since.”":
-    "Grazie mille Rita! Hai per sempre la mia gratitudine per la generosità e l'amicizia che mi hai dato mentre ero in Italia e da allora in poi.&rdquo;",
-  "“Rita is awesome! I am an American of Italian descent. I met Rita when I began studying Italian. I travelled with her in Sicily and in the US. She has endless positive energy, a great sense of humor, is intelligent, has never met a stranger. She is your ticket to a trip of a lifetime.”":
-    "&ldquo;Rita è fantastica! Sono un'americana di origini italiane. Ho conosciuto Rita quando ho cominciato a studiare l'italiano. Ho viaggiato con lei in Sicilia e negli Stati Uniti. Ha un'energia positiva inesauribile, un grande senso dell'umorismo, è intelligente e non ha mai incontrato un estraneo. È il tuo biglietto per il viaggio di una vita.&rdquo;",
-  "“Our two days with Rita in May 2026 were truly magical and among the highlights of our trip to Italy. She took us through Bologna, Modena, and Parma, helping us make the most of every experience, from the Ferrari Museum to an incredible Parmigiano Reggiano tour. She also pointed us to a wonderful wine tasting that became one of our favorite memories.":
-    "&ldquo;I nostri due giorni con Rita nel maggio 2026 sono stati davvero magici e fra i momenti più belli del nostro viaggio in Italia. Ci ha portati a Bologna, Modena e Parma, aiutandoci a vivere al meglio ogni esperienza, dal Museo Ferrari a un incredibile tour del Parmigiano Reggiano. Ci ha anche indicato una degustazione di vini meravigliosa, che è diventata uno dei nostri ricordi preferiti.",
-  "Rita’s warmth, charisma, and local knowledge made every moment special. By the end of our time together, she felt like family. We feel incredibly fortunate to have met her and recommend her wholeheartedly to anyone looking for an authentic and unforgettable experience in Emilia-Romagna.”":
-    "Il calore di Rita, il suo carisma e la sua conoscenza del territorio hanno reso speciale ogni momento. Alla fine del nostro tempo insieme sembrava di famiglia. Ci sentiamo incredibilmente fortunati di averla conosciuta e la consigliamo con tutto il cuore a chiunque cerchi un'esperienza autentica e indimenticabile in Emilia-Romagna.&rdquo;",
-  "“I cannot say enough wonderful things about Rita as a person and as a guide in Italy! From the moment our family of six met her, she treated us like old friends. We had a full day where she guided us around the highlights of Modena, it’s history, architecture and culinary treasures. Not only did we see the big ticket items, she shared a lot of smaller local gems that we would never have found on our own. Visiting a small family run traditional balsamic vinegar operation was one of our favorite things we did in Italy.":
-    "&ldquo;Non ci sono parole sufficienti per dire quanto Rita sia meravigliosa, come persona e come guida in Italia! Dal momento in cui la nostra famiglia di sei persone l'ha incontrata, ci ha trattati come vecchi amici. Abbiamo passato un'intera giornata in cui ci ha guidati fra le bellezze di Modena: la sua storia, la sua architettura e i suoi tesori gastronomici. Non ci ha mostrato soltanto le cose più famose: ci ha fatto scoprire tanti piccoli gioielli locali che da soli non avremmo mai trovato. Visitare una piccola acetaia familiare di aceto balsamico tradizionale è stata una delle cose più belle che abbiamo fatto in Italia.",
-  "Rita also guided us through Bologna, where she shared her extensive knowledge of the history and cultural environment. She knows the city so well, she even studied there! So we really benefited from her insider knowledge. She also knows the best authentic cafés and restaurants, so we avoided any tourist traps.":
-    "Rita ci ha guidati anche a Bologna, dove ci ha trasmesso la sua profonda conoscenza della storia e della vita culturale della città. La conosce così bene che ci ha perfino studiato! Abbiamo davvero approfittato del suo sguardo da persona del posto. Conosce anche i caffè e i ristoranti autentici migliori, così abbiamo evitato ogni trappola per turisti.",
-  "Rita is a delight to tour with, she is warm, friendly, knowledgeable, easy-going, and has a wonderful sense of humor. I cannot recommend her enough ❤️”":
-    "Viaggiare con Rita è una gioia: è calorosa, cordiale, preparata, alla mano e ha un senso dell'umorismo splendido. Non potrei consigliarla di più &#10084;&#65039;&rdquo;",
   "Your story could be next.":
     "La prossima storia potrebbe essere la tua.",
   "Use the configurator to tell us about your family and we'll write you a quote.":
@@ -580,7 +539,7 @@ window.I18N_IT = {
   "Rita travels to the village herself and photographs it for you — the house, the street, the church, the cemetery":
     "Rita si reca di persona nel paese e lo fotografa per te — la casa, la via, la chiesa, il cimitero",
   "Copies of the certified records we find for your family":
-    "Copie dei documenti certificati che troviamo per la tua famiglia",
+    "Copie dei documenti certificati che troviamo relativi alla tua famiglia",
   "Live translation":
     "Traduzione dal vivo",
   "During family meetings":
@@ -666,7 +625,7 @@ window.I18N_IT = {
   "As you fill in the form, your selections will appear here.":
     "Man mano che compili il modulo, le tue scelte compariranno qui.",
   "No prices on this site by choice. Every quote is written by hand — based on your tree, your villages and your add-ons — so it reflects what you actually need.":
-    "<strong style=\"color: var(--c-gold-soft);\">Nessun prezzo su questo sito, per scelta.</strong> Ogni preventivo è scritto a mano — sulla base del tuo albero, dei tuoi paesi e dei tuoi add-on — così rispecchia ciò di cui hai davvero bisogno.",
+    "<strong style=\"color: var(--c-gold-soft);\">Nessun prezzo su questo sito, per scelta.</strong> Ogni preventivo è studiato ad hoc — sulla base del tuo albero, dei tuoi paesi e dei tuoi add-on — così rispecchia ciò di cui hai davvero bisogno.",
 
   /* ---------- contact.html ---------- */
   "Let's start a conversation.":
@@ -846,8 +805,8 @@ window.I18N_IT = {
     "Invio in corso…",
 
   /* ---------- attributi (alt, placeholder, aria-label) ---------- */
-  "A clerk in an Italian town hall consulting a register of births at the counter.":
-    "Un impiegato di un municipio italiano consulta un registro delle nascite al bancone.",
+  "A clerk in an Italian town hall fetching a register, while the records are read at the counter.":
+    "Un'impiegata di un municipio italiano va a prendere un registro, mentre al bancone si leggono i documenti.",
   "A hand holding a hundred-year-old record card above an open register of births.":
     "Una mano regge una scheda anagrafica di cent'anni fa sopra un registro delle nascite aperto.",
   "A handwritten personal record card from the Comune di Sambuca di Sicilia.":
@@ -893,7 +852,7 @@ window.I18N_IT = {
 window.I18N_IT_META = {
   "index.html": { title: "Italian Roots with Rita — Ricerca genealogica e viaggi nelle radici", desc: "Ricerca genealogica italiana e viaggi nelle radici per famiglie americane. Rita verifica il tuo albero negli archivi italiani, trova il paese d'origine e, quando acconsentono, i parenti viventi." },
   "about.html": { title: "Chi è Rita — Ricerca genealogica italiana", desc: "Rita Roncassaglia, ricercatrice genealogica. Trent'anni fra Italia e Stati Uniti, laurea in Lingua e Letteratura Inglese all'Università di Bologna." },
-  "services.html": { title: "Servizi — I pacchetti per le radici italiane", desc: "Due pacchetti: il Pacchetto Ricerca, con Rita negli archivi italiani, e il Viaggio Completo nelle Radici, con Rita accanto a te in Italia. Nessun prezzo fisso: ogni preventivo è scritto a mano." },
+  "services.html": { title: "Servizi — I pacchetti per le radici italiane", desc: "Due pacchetti: il Pacchetto Ricerca, con Rita negli archivi italiani, e il Viaggio Completo nelle Radici, con Rita accanto a te in Italia. Nessun prezzo fisso: ogni preventivo è preparato ad hoc." },
   "experience.html": { title: "L'Esperienza — Come funziona un viaggio nelle radici", desc: "Passo per passo: dal preventivo alla verifica dei documenti, dal contatto discreto con i parenti viventi all'incontro nel paese degli antenati." },
   "testimonials.html": { title: "Storie — Le famiglie che sono già tornate a casa", desc: "Le famiglie americane raccontano con parole loro il viaggio nelle radici italiane fatto insieme a Rita." },
   "quote.html": { title: "Richiedi un preventivo — Viaggio nelle radici italiane", desc: "Cinque passi brevi per comporre la tua richiesta: pacchetto, add-on, famiglia e preferenze di viaggio. Preventivo su misura entro 48 ore, senza impegno." },
